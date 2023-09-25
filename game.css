@@ -7,13 +7,13 @@ p {
 }
 
 #moovingButton {
-    width: 70px;
-    height: 70px;
+    width: 39px;
+    height: 39px;
     margin-top: 50px;
     border-radius: 50%;
     text-align: center;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 21px;
     background-color: transparent;
     border: 0 solid transparent;
     animation: buttonMove 17s infinite alternate;
@@ -34,12 +34,12 @@ p {
 
     6% {
         margin-left: -81%;
-        color: red;
+        color: magenta;
     }
 
     7% {
         margin-left: -81%;
-        color: red;
+        color: magenta;
     }
 
     8% {
@@ -66,40 +66,37 @@ p {
 
     18% {
         margin-left: 1%;
-        background-color: transparent;
         color: transparent;
     }
-    
+
 
 
 
     23% {
         margin-left: -50%;
-        background-color: transparent;
         color: transparent;
     }
 
     26% {
         margin-left: -50%;
-        color: red;
+        color: magenta;
     }
 
     27% {
         margin-left: -50%;
-        color: red;
+        color: magenta;
     }
 
     28% {
         margin-left: -50%;
         color: transparent;
     }
-    
-    
+
+
 
 
     36% {
         margin-left: 55%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -115,7 +112,6 @@ p {
 
     41% {
         margin-left: 55%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -123,7 +119,6 @@ p {
 
     46% {
         margin-left: 31%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -139,15 +134,13 @@ p {
 
     51% {
         margin-left: 31%;
-        background-color: transparent;
         color: transparent;
     }
-    
+
 
 
     56% {
         margin-left: -72%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -168,10 +161,8 @@ p {
 
 
 
-
     67% {
         margin-left: 72%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -187,17 +178,13 @@ p {
 
     72% {
         margin-left: 72%;
-        background-color: transparent;
         color: transparent;
     }
 
 
 
-
-
     77% {
         margin-left: 12%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -213,17 +200,13 @@ p {
 
     82% {
         margin-left: 12%;
-        background-color: transparent;
         color: transparent;
     }
 
 
 
-
-
     87% {
         margin-left: -22%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -239,7 +222,6 @@ p {
 
     91% {
         margin-left: -22%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -247,7 +229,6 @@ p {
 
     96% {
         margin-left: 81%;
-        background-color: transparent;
         color: transparent;
     }
 
