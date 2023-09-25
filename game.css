@@ -7,12 +7,13 @@ p {
 }
 
 #moovingButton {
-    width: 35px;
-    height: 35px;
+    width: 70px;
+    height: 70px;
     margin-top: 50px;
     border-radius: 50%;
     text-align: center;
     font-weight: 700;
+    font-size: 17px;
     background-color: transparent;
     border: 0 solid transparent;
     animation: buttonMove 17s infinite alternate;
@@ -21,29 +22,29 @@ p {
 @keyframes buttonMove {
     0% {
         margin-left: 81%;
-        background-color: transparent;
+        color: transparent;
     }
 
 
 
     3% {
         margin-left: -81%;
-        background-color: transparent;
+        color: transparent;
     }
 
     6% {
         margin-left: -81%;
-        background-color: gray;
+        color: red;
     }
 
     7% {
         margin-left: -81%;
-        background-color: gray;
+        color: red;
     }
 
     8% {
         margin-left: -81%;
-        background-color: transparent;
+        color: transparent;
     }
 
 
@@ -51,21 +52,23 @@ p {
     13% {
         margin-left: 1%;
         background-color: transparent;
+        color: transparent;
     }
 
     16% {
         margin-left: 1%;
-        background-color: gray;
+        color: green;
     }
 
     17% {
         margin-left: 1%;
-        background-color: gray;
+        color: green;
     }
 
     18% {
         margin-left: 1%;
         background-color: transparent;
+        color: transparent;
     }
     
 
@@ -74,21 +77,22 @@ p {
     23% {
         margin-left: -50%;
         background-color: transparent;
+        color: transparent;
     }
 
     26% {
         margin-left: -50%;
-        background-color: gray;
+        color: red;
     }
 
     27% {
         margin-left: -50%;
-        background-color: gray;
+        color: red;
     }
 
     28% {
         margin-left: -50%;
-        background-color: transparent;
+        color: transparent;
     }
     
     
@@ -97,21 +101,23 @@ p {
     36% {
         margin-left: 55%;
         background-color: transparent;
+        color: transparent;
     }
 
     39% {
         margin-left: 55%;
-        background-color: gray;
+        color: green;
     }
 
     40% {
         margin-left: 55%;
-        background-color: gray;
+        color: green;
     }
 
     41% {
         margin-left: 55%;
         background-color: transparent;
+        color: transparent;
     }
 
 
@@ -119,21 +125,23 @@ p {
     46% {
         margin-left: 31%;
         background-color: transparent;
+        color: transparent;
     }
 
     49% {
         margin-left: 31%;
-        background-color: gray;
+        color: red;
     }
 
     50% {
         margin-left: 31%;
-        background-color: gray;
+        color: red;
     }
 
     51% {
         margin-left: 31%;
         background-color: transparent;
+        color: transparent;
     }
     
 
@@ -145,17 +153,17 @@ p {
 
     59% {
         margin-left: -72%;
-        background-color: gray;
+        color: green;
     }
 
     60% {
         margin-left: -72%;
-        background-color: gray;
+        color: green;
     }
 
     61% {
         margin-left: -72%;
-        background-color: transparent;
+        color: transparent;
     }
 
 
@@ -164,21 +172,23 @@ p {
     67% {
         margin-left: 72%;
         background-color: transparent;
+        color: transparent;
     }
 
     70% {
         margin-left: 72%;
-        background-color: gray;
+        color: cyan;
     }
 
     71% {
         margin-left: 72%;
-        background-color: gray;
+        color: cyan;
     }
 
     72% {
         margin-left: 72%;
         background-color: transparent;
+        color: transparent;
     }
 
 
@@ -188,21 +198,23 @@ p {
     77% {
         margin-left: 12%;
         background-color: transparent;
+        color: transparent;
     }
 
     80% {
         margin-left: 12%;
-        background-color: gray;
+        color: springgreen;
     }
 
     81% {
         margin-left: 12%;
-        background-color: gray;
+        color: springgreen;
     }
 
     82% {
         margin-left: 12%;
         background-color: transparent;
+        color: transparent;
     }
 
 
@@ -212,21 +224,23 @@ p {
     87% {
         margin-left: -22%;
         background-color: transparent;
+        color: transparent;
     }
 
     89% {
         margin-left: -22%;
-        background-color: gray;
+        color: red;
     }
 
     90% {
         margin-left: -22%;
-        background-color: gray;
+        color: red;
     }
 
     91% {
         margin-left: -22%;
         background-color: transparent;
+        color: transparent;
     }
 
 
@@ -234,16 +248,17 @@ p {
     96% {
         margin-left: 81%;
         background-color: transparent;
+        color: transparent;
     }
 
     99% {
         margin-left: 81%;
-        background-color: gray;
+        color: cyan;
     }
 
     100% {
         margin-left: 81%;
-        background-color: gray;
+        color: cyan;
     }
 
 }
