@@ -16,7 +16,7 @@ body {
 .portrait-picture {
   margin: 8px auto;
   margin-top: 53px;
-  background-color: white;
+  background-color: rgb(230, 221, 221);
   background-image: url(./CT.jpg);
   background-repeat: no-repeat;
   background-position: center;
