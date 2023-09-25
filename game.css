@@ -51,7 +51,6 @@ p {
 
     13% {
         margin-left: 1%;
-        background-color: transparent;
         color: transparent;
     }
 
@@ -106,12 +105,12 @@ p {
 
     39% {
         margin-left: 55%;
-        color: green;
+        color: cyan;
     }
 
     40% {
         margin-left: 55%;
-        color: green;
+        color: cyan;
     }
 
     41% {
@@ -149,6 +148,7 @@ p {
     56% {
         margin-left: -72%;
         background-color: transparent;
+        color: transparent;
     }
 
     59% {
@@ -203,12 +203,12 @@ p {
 
     80% {
         margin-left: 12%;
-        color: springgreen;
+        color: green;
     }
 
     81% {
         margin-left: 12%;
-        color: springgreen;
+        color: green;
     }
 
     82% {
