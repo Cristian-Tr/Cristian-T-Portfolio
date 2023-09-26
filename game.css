@@ -7,8 +7,8 @@ p {
 }
 
 #moovingButton {
-    width: 39px;
-    height: 39px;
+    width: 29px;
+    height: 29px;
     margin-top: 50px;
     border-radius: 50%;
     text-align: center;
@@ -91,7 +91,6 @@ p {
         margin-left: -50%;
         color: transparent;
     }
-
 
 
 
