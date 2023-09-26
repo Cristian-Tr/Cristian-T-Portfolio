@@ -7,15 +7,12 @@ p {
 }
 
 #moovingButton {
-    width: 29px;
-    height: 29px;
+    width: 21px;
+    height: 21px;
     margin-top: 50px;
     border-radius: 50%;
     text-align: center;
     font-weight: 700;
-    font-size: 21px;
-    background-color: transparent;
-    border: 0 solid transparent;
     animation: buttonMove 17s infinite alternate;
 }
 
