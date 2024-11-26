@@ -101,6 +101,22 @@
 	width: 91px;
 	height: 91px;
 	border-radius: 50%;
+	border: 10px solid yellow;
+	background-image: url(./nobilio.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thumbnail .window4 {
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 91px;
+	height: 91px;
+	border-radius: 50%;
 	border: 10px solid cyan;
 	background-image: url(./dog.png);
 	background-size: 100% 100%;
