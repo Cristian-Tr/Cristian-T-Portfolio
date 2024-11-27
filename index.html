@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="section.css">
   <link rel="stylesheet" href="game.css">
+  <link rel="stylesheet" href="chatbot.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
@@ -22,6 +23,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="app.js"></script>
+  <script src="chatbot.js"></script>
+
 </head>
 
 
@@ -44,6 +47,67 @@
           <div class="scrambleText"></div>
         </div><br><br>
 
+
+
+
+        <div class="col-sm-12 col-12" class="container-fluid align-items-center">
+
+          <div class="col-sm-4 col-xs-12"></div>
+
+
+         
+            <!-- MY CHATBOT -->
+            <div class="chat-bar-collapsible" style="margin: auto; width: 350px;">
+              <button id="chat-button" type="button" class="collapsible" class="text-center" style="color:dodgerblue">Talk with my english
+                chatbot CT!
+                <div class="animation">
+                  <div class="smiley-face">
+                    <p class="eyes left"></p>
+                    <p class="eyes right"></p>
+                    <div class="smiley-mouth"></div>
+                  </div>
+                </div>
+              </button>
+
+              <div class="content">
+                <div class="full-chat-block">
+                  <!-- Message Container -->
+                  <div class="outer-container">
+                    <div class="chat-container">
+                      <!-- Messages -->
+                      <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                      </div>
+
+                      <!-- User input box -->
+                      <div class="chat-bar-input-block">
+                        <div id="userInput">
+                          <input id="textInput" class="input-box" type="text" name="msg"
+                            placeholder="Tap 'Enter' to send a message">
+                          <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                          <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                        </div>
+                      </div>
+
+                      <div id="chat-bar-bottom">
+                        <p></p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+         
+
+        </div>
         <!-- My portfolio - spaceship -->
         <div class="col-sm-12 col-12" class="text-center">
 
