@@ -54,7 +54,7 @@
   position: absolute;
   border-radius: 50%;
   margin: auto;
-  background: gold;
+  background: yellow;
 }
 
 .eyes {
@@ -86,7 +86,7 @@
     background: dodgerblue;
   }
   59% {
-    background: gold;
+    background: yellow;
   }
   59.1% {
     background: dodgerblue;
@@ -135,13 +135,13 @@
 }
 
 .full-chat-block {
-  background: dodgerblue;
+  background: darkgrey;
   text-align: center;
   overflow: auto;
   scrollbar-width: none;
   height: max-content;
   transition: max-height 0.2s ease-out;
-  border: 3px solid dodgerblue;
+  border: 3px solid grey;
 }
 
 .outer-container {
@@ -213,8 +213,8 @@
   font-size: 12px;
   line-height: 1em;
   display: inline-block;
-  background: gold;
-  color: dodgerblue;
+  background: cyan;
+  color: black;
   padding: 10px;
   border-radius: 8px;
   border-bottom-left-radius: 2px;
