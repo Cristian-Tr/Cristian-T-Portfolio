@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-      userText = "You need to type one or more words for me to understand what you want!";
+      userText = "Type something please!";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -481,10 +481,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (max - min) + min); 
   }
 
-  // https://www.programiz.com/javascript/examples/get-random-item
+
   function getRandomItem(arr) {
     // get random index value
     const randomIndex = Math.floor(Math.random() * arr.length);
