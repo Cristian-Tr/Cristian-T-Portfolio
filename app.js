@@ -65,12 +65,15 @@ document.addEventListener('DOMContentLoaded', function () {
     'DIGITAL TECHNOLOGIES',
     'FRONTEND DEVELOPMENT',
     'SOFTWARE IMPLEMENTATION',
-    'APPLICATION MAINTENANCE',
+    'EMAIL MARKETING',
     'EXPLORE MY PORTFOLIO!',
   ]
 
   const el = document.querySelector('.scrambleText')
   const fx = new TextScramble(el)
+
+
+
 
   let counter = 0
   const next = () => {
