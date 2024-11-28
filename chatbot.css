@@ -1,3 +1,4 @@
+
 .chat-bar-collapsible {
   position: fixed;
   bottom: 0;
@@ -16,6 +17,7 @@
   text-align: center;
   outline: none;
   font-size: 12px;
+  border-radius: 153px 153px 0 0;
 }
 
 @media (min-width: 768px) {
@@ -36,7 +38,7 @@
   padding-top: 1px;
   padding-bottom: 1px;
   width: 100%;
-  height: 57px;
+  height: 39px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,30 +50,30 @@
 
 /* Smiley face */
 .smiley-face {
-  width: 53px;
-  height: 53px;
-  top: 1px;
+  width: 35px;
+  height: 35px;
+  top: 2px;
   position: absolute;
   border-radius: 50%;
   margin: auto;
-  background: yellow;
+  background: orange;
 }
 
 .eyes {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   background: dodgerblue;
   border-radius: 10px;
   position: absolute;
-  top: 14px;
+  top: 9px;
 }
 
 .eyes.left {
-  left: 34px;
+  left: 22px;
 }
 
 .eyes.right {
-  right: 34px;
+  right: 22px;
   animation: 3.5s blink-eye linear infinite;
 }
 
@@ -86,7 +88,7 @@
     background: dodgerblue;
   }
   59% {
-    background: yellow;
+    background: orange;
   }
   59.1% {
     background: dodgerblue;
@@ -97,15 +99,15 @@
 }
 
 .smiley-mouth {
-  width: 45px;
-  height: 45px;
-  border: 5px solid red;
+  width: 27px;
+  height: 27px;
+  border: 3.5px solid red;
   border-top: 0;
   border-radius: 100%;
   border-color: transparent transparent red transparent;
   position: absolute;
-  bottom: 10px;
-  left: 5px;
+  bottom: 7px;
+  left: 4.5px;
   animation: 3.5s smiley-mouth linear infinite;
 }
 
@@ -135,13 +137,13 @@
 }
 
 .full-chat-block {
-  background: darkgrey;
+  background: lightskyblue;
   text-align: center;
   overflow: auto;
   scrollbar-width: none;
   height: max-content;
   transition: max-height 0.2s ease-out;
-  border: 3px solid grey;
+  border: 3px solid lightskyblue;
 }
 
 .outer-container {
