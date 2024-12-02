@@ -28,6 +28,7 @@
 
 
 #chat-button {
+  width: 95%;
   text-align: center;
 }
 /* Rotating messages */
@@ -130,30 +131,21 @@
 }
 
 .content {
+  width: 95%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: red;
 }
 
-.full-chat-block {
-  background: lightskyblue;
-  text-align: center;
-  overflow: auto;
-  scrollbar-width: none;
-  height: max-content;
-  transition: max-height 0.2s ease-out;
-  border: 3px solid lightskyblue;
-}
-
 .outer-container {
-  min-height: 370px;
+  min-height: 350px;
   bottom: 0%;
   position: relative;
 }
 
 .chat-container {
-  max-height: 250px;
+  max-height: 350px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -196,7 +188,7 @@
   font-size: 12px;
   line-height: 1em;
   display: inline-block;
-  background: red;
+  background: magenta;
   padding: 10px;
   border-radius: 8px;
   border-bottom-right-radius: 2px;
@@ -205,22 +197,22 @@
   animation: floatup .5s forwards
 }
 
-.botText {
+.myAssistentText {
   color: black;
   font-size: 12px;
   text-align: left;
 }
 
-.botText span {
+.myAssistentText span {
   font-size: 12px;
   line-height: 1em;
   display: inline-block;
-  background: cyan;
+  background: springgreen;
   color: black;
   padding: 10px;
   border-radius: 8px;
   border-bottom-left-radius: 2px;
-  max-width: 80%;
+  max-width: 100%;
   margin-left: 10px;
   animation: floatup .5s forwards
 }
@@ -236,9 +228,20 @@
   }
 }
 
+.full-chat-block {
+  width: 100%;
+  background: lightskyblue;
+  text-align: center;
+  overflow: auto;
+  scrollbar-width: none;
+  height: max-content;
+  transition: max-height 0.2s ease-out;
+  border: 3px solid lightskyblue;
+}
+
 @media screen and (max-width:600px) {
   .full-chat-block {
-      width: 100%;
+      width: 95%;
       border-radius: 0px;
   }
   

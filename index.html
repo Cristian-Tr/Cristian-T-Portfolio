@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="section.css">
   <link rel="stylesheet" href="game.css">
+  <link rel="stylesheet" href="chatbot.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
@@ -22,6 +23,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="app.js"></script>
+  <script src="chatbot.js"></script>
 </head>
 
 
@@ -300,7 +302,7 @@
 
     </main>
 
-        <!-- MY CHATBOT 
+        <!-- MY ASSISTENT -->
         <div class="row" class="container-fluid align-items-center">
 
           <div class="chat-bar-collapsible" style="margin: auto; width: 350px;">
@@ -314,7 +316,7 @@
                   <div class="smiley-mouth"></div>
                 </div>
               </div>
-              Talk with my chatbot CT!
+              CT - My virtual assistent
             </button>
 
             <div class="content">
@@ -323,14 +325,14 @@
                 <div class="outer-container">
                   <div class="chat-container">
 
-                    <div id="chatbox">
-                      <h5 id="chat-timestamp"></h5>
-                      <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    <div id="conversationPage">
+                      <h5 id="conversationStartTime"></h5>
+                      <p id="startMessage" class="myAssistentText"></p>
                     </div>
 
                     <div id="userInput">
                       <input id="textInput" class="input-box" type="text" name="msg" style="font-size: 17px;"
-                        placeholder="Tap 'Enter' to send a message">
+                        placeholder="Type your message here and tap Enter">
                       <p></p>
                     </div>
 
@@ -349,7 +351,7 @@
 
 
       </div>
--->
+
 
 
 </body>
