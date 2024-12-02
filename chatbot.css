@@ -15,7 +15,6 @@
   text-align: center;
   outline: none;
   font-size: 12px;
-  border-radius: 17px 17px 0 0;
 }
 
 #chat-button {
@@ -27,8 +26,10 @@
   animation: 3.5s animated-text linear infinite;
 }
 
-#chat-button:hover {
-  background-color: dodgerblue;
+@media (hover: hover) {
+  #chat-button:hover {
+     background-color: dodgerblue;
+  }
 }
 
 /* Rotating messages */
@@ -45,7 +46,6 @@
   align-items: center;
   overflow: hidden;
   perspective: 1000px;
-  border: 1px white;
   z-index: 1000;
 }
 
@@ -246,7 +246,6 @@
   scrollbar-width: none;
   height: max-content;
   transition: max-height 0.2s ease-out;
-  border: 3px solid dodgerblue;
 }
 
 @media screen and (min-width: 768px) {
