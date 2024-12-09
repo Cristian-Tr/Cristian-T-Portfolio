@@ -24,6 +24,7 @@
   font-size: 17px; 
   text-shadow: 1px 1px 1px black;
   animation: 3.5s animated-text linear infinite;
+  border: 1px solid grey;
 }
 
 @media (hover: hover) {
@@ -144,7 +145,10 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: red;
+  background-color: transparent;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  border: 1px solid grey;
 }
 
 .outer-container {
@@ -180,9 +184,10 @@
   width: 100%;
   padding: 10px;
   font-size: 12px;
-  color: black;
+  color: white;
   background-color: white;
-  outline: none
+  outline: none;
+  border: 1px solid grey;
 }
 
 .userText {
@@ -217,7 +222,8 @@
   line-height: 1em;
   display: inline-block;
   background: springgreen;
-  color: black;
+  border: 1px solid grey;
+  color: white;
   padding: 10px;
   border-radius: 8px;
   border-bottom-left-radius: 2px;
@@ -240,7 +246,9 @@
 
 .full-chat-block {
   width: 100%;
-  background: dodgerblue;
+  background-color: transparent;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
   text-align: center;
   overflow: auto;
   scrollbar-width: none;
@@ -256,6 +264,5 @@
   #chat-button {
     width: 95%;
   }
-
 
 }
