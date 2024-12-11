@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ["I like digital technologies that can improve the quality of life!"]],
 
     [/Cristian/i,
-      ["You can find me on Linkedin!"]],
+      ["You can find Cristian on Linkedin!"]],
 
     [/adress/i,
       ["You can find me on Linkedin!"]],
@@ -62,22 +62,57 @@ document.addEventListener('DOMContentLoaded', function () {
     [/hello/i,
       ["Hi!"]],
 
-      [/hi/i,
-        ["Hi!"]],
+    [/hi/i,
+      ["Hi!"]],
 
-      [/are/i,
-        ["I`m fine. Thank you!"]],
-        
-      [/do you/i,
-        ["Fine. Thank you!"]],
-        
+    [/are/i,
+      ["I`m fine. Thank you!"]],
+
+    [/do/i,
+      ["Fine. Thank you!"]],
+
+    [/what/i,
+      ["What do you think?"]],
+
     [/quit/i,
       ["Good bye!"]],
+
+    [/because/i,
+      ["Is that the real reason?"]],
+
+    [/Why/i,
+      ["Why do you ask that?"]],
+
+    [/It is/i,
+      ["You seem very certain."]],
+
+    [/Yes/i,
+      ["You seem quite sure."]],
+
+    [/no/i,
+      ["You do not seem quite sure."]],
+
+    [/You/i,
+      ["Why do you say that to me?"]],
+
+    [/computer/i,
+      ["It`s strange to talk to a computer?"]],
+
+    [/feel/i,
+      ["Tell me more about your feelings."]],
+
+    [/have/i,
+      ["Why do you have that impression?"]],
+
+    [/wheater/i,
+      ["Please consult the wheater apps"]],
 
     [/(.*)/i,
       ["I don`t understand!",
         "Please rephrase!",
         "Sorry, I don`t know what to say!"]],
+
+
 
   ]
 

@@ -21,7 +21,7 @@
   width: 98%;
   text-align: center;
   color: orange;
-  font-size: 17px; 
+  font-size: 17px;
   text-shadow: 1px 1px 1px black;
   animation: 3.5s animated-text linear infinite;
   border: 1px solid grey;
@@ -29,7 +29,7 @@
 
 @media (hover: hover) {
   #chat-button:hover {
-     background-color: dodgerblue;
+    font-size: 21px;
   }
 }
 
@@ -64,7 +64,7 @@
 .eyes {
   width: 7px;
   height: 7px;
-  background: dodgerblue;
+  background: cyan;
   border-radius: 10px;
   position: absolute;
   top: 9px;
@@ -81,15 +81,15 @@
 
 @keyframes blink-eye {
   0% {
-    background: dodgerblue;
+    background: cyan;
   }
 
   51% {
-    background: dodgerblue;
+    background: cyan;
   }
 
   51.1% {
-    background: dodgerblue;
+    background: cyan;
   }
 
   59% {
@@ -97,11 +97,11 @@
   }
 
   59.1% {
-    background: dodgerblue;
+    background: cyan;
   }
 
   100% {
-    background: dodgerblue;
+    background: cyan;
   }
 }
 
