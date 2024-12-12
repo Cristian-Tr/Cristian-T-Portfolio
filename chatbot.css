@@ -20,7 +20,7 @@
 #chat-button {
   width: 98%;
   text-align: center;
-  color: orange;
+  color: #ffa500;
   font-size: 17px;
   text-shadow: 1px 1px 1px black;
   animation: 3.5s animated-text linear infinite;
@@ -58,7 +58,7 @@
   position: absolute;
   border-radius: 50%;
   margin: auto;
-  background: orange;
+  background: #ffa500;
 }
 
 .eyes {
@@ -93,7 +93,7 @@
   }
 
   59% {
-    background: orange;
+    background: #ffa500;
   }
 
   59.1% {

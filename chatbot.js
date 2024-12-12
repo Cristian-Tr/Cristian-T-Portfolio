@@ -20,12 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
     [/experience/i,
       ["I have experience with HTML, CSS, SASS, SVG, Bootstrap, JavaScript and jQuery!"]],
 
-    [/name/i,
-      ["My name is CT!"]],
+      [/experienta/i,
+      ["Cristian are experienta cu HTML, CSS, SASS, SVG, Bootstrap, JavaScript si jQuery!"]],
 
+        [/numele/i,
+          ["Denumirea care mi-a fost data este CT!"]],
+
+          [/name/i,
+            ["My name is CT!"]],
+  
     [/know/i,
-      ["If you want to know more about me, please send a message on Linkedin!"]],
+      ["If you want to know more about Cristian, please send him a message on Linkedin!"]],
 
+      [/stiu/i,
+        ["Daca vrei sa stii mai multe despre Cristian te rog sa ii trimiti mesaj pe Linkedin!"]],
+  
     [/react/i,
       ["I don`t have experience with React!"]],
 
@@ -62,15 +71,37 @@ document.addEventListener('DOMContentLoaded', function () {
     [/hello/i,
       ["Hi!"]],
 
-    [/hi/i,
-      ["Hi!"]],
+    [/salut/i,
+      ["Bună!"]],
 
+      [/Buna/i,
+        ["Salut!"]],
+        
+    [/mai faci/i,
+      ["Bine. Dar tu?!"]],
+
+      [/bine/i,
+        ["Mă bucur!"]],
+        
+    [/ok/i,
+      ["I`m glad!"]],
+
+      [/fine/i,
+        ["I`m glad!"]],
+  
+  
     [/are/i,
       ["I`m fine. Thank you!"]],
 
     [/do/i,
       ["Fine. Thank you!"]],
 
+      [/can you/i,
+        ["I can give you just some answers!"]],
+
+        [/ce faci/i,
+          ["Sunt bine. Dar tu?!"]],    
+  
     [/what/i,
       ["What do you think?"]],
 
@@ -92,14 +123,26 @@ document.addEventListener('DOMContentLoaded', function () {
     [/no/i,
       ["You do not seem quite sure."]],
 
+      [/sad/i,
+        ["Is there anything that's bothering you?"]],
+  
+      [/no/i,
+        ["You do not seem quite sure."]],
+  
     [/You/i,
       ["Why do you say that to me?"]],
 
+      [/angry/i,
+        ["Maybe it would feel better for you if you forgive those who upset you."]],
+        
+      [/suparat/i,
+        ["Poate ca te-ai simti mai bine daca i-ai ierta pe cei care te-au suparat."]],
+  
     [/computer/i,
       ["It`s strange to talk to a computer?"]],
 
     [/feel/i,
-      ["Tell me more about your feelings."]],
+      ["I am not a therapist."]],
 
     [/have/i,
       ["Why do you have that impression?"]],
