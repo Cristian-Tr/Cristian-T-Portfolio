@@ -12,8 +12,7 @@
   color: white;
   cursor: pointer;
   width: 350px;
-  height: 100px;
-  margin-left: -5px;
+  margin-left: -2px;
   text-align: center;
   outline: none;
   font-size: 12px;
@@ -22,48 +21,126 @@
 #chat-button {
   width: 98%;
   text-align: center;
-  color: #ffa500;
+  color: cyan;
   font-size: 17px;
   text-shadow: 1px 1px 1px black;
+  animation: 3.5s animated-text linear infinite;
   border: 1px solid grey;
 }
 
 @media (hover: hover) {
-  #chat-button h4:hover {
+  #chat-button:hover {
     font-size: 21px;
   }
 }
 
-#chat-button h4 {
-  font-size: 17px;
-  color: cyan;
-  margin-bottom: 1px;
-  /*text-shadow: 1px 1px 1px black;*/
+/* SMILEY ANIMATION */
+.animation {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 100%;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  perspective: 1000px;
+  z-index: 1000;
 }
 
-/*@keyframes text-colors {
+/* Smiley face */
+.smiley-face {
+  width: 35px;
+  height: 35px;
+  top: 2px;
+  position: absolute;
+  border-radius: 50%;
+  margin: auto;
+  background: #ffa500;
+}
 
+.eyes {
+  width: 8px;
+  height: 8px;
+  background: cyan;
+  border-radius: 10px;
+  position: absolute;
+  top: 9px;
+}
+
+.eyes.left {
+  left: 22px;
+  animation: 3.5s blink-eye linear infinite;
+}
+
+.eyes.right {
+  right: 22px;
+  animation: 3.5s blink-eye linear infinite;
+}
+
+@keyframes blink-eye {
   0% {
-    color: magenta;
+    background: cyan;
   }
 
-  53% {
-    color: magenta;
+  51% {
+    background: cyan;
   }
 
-  54% {
-    color: cyan;
+  51.1% {
+    background: cyan;
   }
 
-  99% {
-    color: cyan;
+  59% {
+    background: #ffa500;
+  }
+
+  59.1% {
+    background: cyan;
   }
 
   100% {
-    color: magenta;
+    background: cyan;
   }
-}*/
+}
 
+.smiley-mouth {
+  width: 27px;
+  height: 27px;
+  border: 3.5px solid red;
+  border-top: 0;
+  border-radius: 100%;
+  border-color: transparent transparent red transparent;
+  position: absolute;
+  bottom: 7px;
+  left: 4.5px;
+  animation: 3.5s smiley-mouth linear infinite;
+}
+
+@keyframes smiley-mouth {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  57% {
+    transform: rotate(12deg);
+  }
+
+  71% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 .content {
   width: 98%;
@@ -191,279 +268,3 @@
   }
 
 }
-
-
-/* ASSISTENT */
-.assistent {
-  width: 100%;
-  height: 50px;
-}
-
-#head {
-  translate: 0px -25px;
-  animation: head_bounce 2s ease-in-out infinite alternate;
-}
-
-@keyframes head_bounce {
-
-  0% {
-    transform: translateY(-32px)
-  }
-
-  100% {
-    transform: translateY(-29px)
-  }
-}
-
-#assistent-eyes {
-  transform: scale(.17, .17);
-  fill: cyan;
-  z-index: 100;
-  animation: 3.5s blink-eyes linear infinite;
-}
-
-
-@keyframes blink-eyes {
-
-  0% {
-    fill: cyan;
-  }
-
-  34% {
-    fill: cyan;
-  }
-
-  35% {
-    fill: #ffa500;
-  }
-
-  37% {
-    fill: #ffa500;
-  }
-
-  39% {
-    fill: cyan;
-  }
-
-  100% {
-    fill: cyan;
-  }
-}
-
-.bezel {
-  transform: scale(.17, .17);
-  fill: cyan;
-  /*animation: 35s bezel-colors linear infinite;*/
-}
-
-/*@keyframes bezel-colors {
-
-  0% {
-    fill: magenta;
-  }
-
-  53% {
-    fill: magenta;
-  }
-
-  54% {
-    fill: cyan;
-  }
-
-  99% {
-    fill: cyan;
-  }
-
-  100% {
-    fill: magenta;
-  }
-}*/
-
-.display {
-  transform: scale(.17, .17);
-}
-
-#mouth {
-  transform: scale(.17, .17);
-
-}
-
-#arc {
-  animation: 7.1s move-lips linear infinite;
-}
-
-
-
-@keyframes move-lips {
-
-  0% {
-    transform: rotate(0deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  34% {
-    transform: rotate(0deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  39% {
-    transform: rotate(3deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  44% {
-    transform: rotate(5deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  45% {
-    transform: rotate(0deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  74% {
-    transform: rotate(0deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  79% {
-    transform: rotate(-3deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  84% {
-    transform: rotate(-5deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  85% {
-    transform: rotate(0deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-
-  100% {
-    transform: rotate(0deg);
-    transform-box: fill-box;
-    transform-origin: center;
-  }
-}
-
-
-
-
-/* CHATBOT SMILEY FACE 
-.animation {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  width: 100%;
-  height: 39px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  perspective: 1000px;
-  z-index: 1000;
-}
-
-.smiley-face {
-  width: 35px;
-  height: 35px;
-  top: 2px;
-  position: absolute;
-  border-radius: 50%;
-  margin: auto;
-  background: #ffa500;
-}
-
-.eyes {
-  width: 7px;
-  height: 7px;
-  background: cyan;
-  border-radius: 10px;
-  position: absolute;
-  top: 9px;
-}
-
-.eyes.left {
-  left: 22px;
-}
-
-.eyes.right {
-  right: 22px;
-  animation: 3.5s blink-eye linear infinite;
-}
-
-@keyframes blink-eye {
-  0% {
-    background: cyan;
-  }
-
-  51% {
-    background: cyan;
-  }
-
-  51.1% {
-    background: cyan;
-  }
-
-  59% {
-    background: #ffa500;
-  }
-
-  59.1% {
-    background: cyan;
-  }
-
-  100% {
-    background: cyan;
-  }
-}
-
-.smiley-mouth {
-  width: 27px;
-  height: 27px;
-  border: 3.5px solid red;
-  border-top: 0;
-  border-radius: 100%;
-  border-color: transparent transparent red transparent;
-  position: absolute;
-  bottom: 7px;
-  left: 4.5px;
-  animation: 3.5s smiley-mouth linear infinite;
-}
-
-@keyframes smiley-mouth {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-
-  57% {
-    transform: rotate(12deg);
-  }
-
-  71% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-*/
