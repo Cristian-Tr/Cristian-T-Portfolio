@@ -12,6 +12,8 @@
   color: white;
   cursor: pointer;
   width: 350px;
+  height: 71px;
+  margin-left: -5px;
   text-align: center;
   outline: none;
   font-size: 12px;
@@ -34,12 +36,12 @@
 
 #chat-button h4 {
   font-size: 17px;
-  margin-bottom: -2px;
-  text-shadow: 1px 1px 1px black;
-  animation: 35s text-colors linear infinite;
+  color: cyan;
+  margin-bottom: 1px;
+  /*text-shadow: 1px 1px 1px black;*/
 }
 
-@keyframes text-colors {
+/*@keyframes text-colors {
 
   0% {
     color: magenta;
@@ -60,7 +62,7 @@
   100% {
     color: magenta;
   }
-}
+}*/
 
 
 .content {
@@ -251,10 +253,10 @@
 .bezel {
   transform: scale(.17, .17);
   fill: cyan;
-  animation: 35s bezel-colors linear infinite;
+  /*animation: 35s bezel-colors linear infinite;*/
 }
 
-@keyframes bezel-colors {
+/*@keyframes bezel-colors {
 
   0% {
     fill: magenta;
@@ -275,7 +277,7 @@
   100% {
     fill: magenta;
   }
-}
+}*/
 
 .display {
   transform: scale(.17, .17);

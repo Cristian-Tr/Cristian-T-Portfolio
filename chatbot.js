@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function firstAssistentMessage() {
 
 
-    let firstMessage = "I`m CT! How can I help you?"
+    let firstMessage = "Buna! Cu ce te pot ajuta?<br>Scrie-mi fara diacritice!<br>Hi! How can I help you?"
     document.getElementById("startMessage").innerHTML = '<p class="myAssistentText"><span>' + firstMessage + '</span></p>';
 
   }
@@ -20,21 +20,21 @@ document.addEventListener('DOMContentLoaded', function () {
     [/experience/i,
       ["I have experience with HTML, CSS, SASS, SVG, Bootstrap, JavaScript and jQuery!"]],
 
-      [/experienta/i,
+    [/experienta/i,
       ["Cristian are experienta cu HTML, CSS, SASS, SVG, Bootstrap, JavaScript si jQuery!"]],
 
-        [/numele/i,
-          ["Denumirea care mi-a fost data este CT!"]],
+    [/numele/i,
+      ["Denumirea care mi-a fost data este CT!"]],
 
-          [/name/i,
-            ["My name is CT!"]],
-  
+    [/name/i,
+      ["My name is CT!"]],
+
     [/know/i,
       ["If you want to know more about Cristian, please send him a message on Linkedin!"]],
 
-      [/stiu/i,
-        ["Daca vrei sa stii mai multe despre Cristian te rog sa ii trimiti mesaj pe Linkedin!"]],
-  
+    [/stiu/i,
+      ["Daca vrei sa stii mai multe despre Cristian te rog sa ii trimiti mesaj pe Linkedin!"]],
+
     [/react/i,
       ["I don`t have experience with React!"]],
 
@@ -59,6 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
     [/Cristian/i,
       ["You can find Cristian on Linkedin!"]],
 
+      [/email/i,
+        ["You can find Cristian on Linkedin!"]],
+  
+      [/adresa/i,
+        ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
+  
+        [/mailul/i,
+          ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
+    
     [/adress/i,
       ["You can find me on Linkedin!"]],
 
@@ -74,34 +83,49 @@ document.addEventListener('DOMContentLoaded', function () {
     [/salut/i,
       ["Bună!"]],
 
-      [/Buna/i,
-        ["Salut!"]],
-        
-    [/mai faci/i,
-      ["Bine. Dar tu?!"]],
+    [/Buna/i,
+      ["Salut!"]],
 
-      [/bine/i,
-        ["Mă bucur!"]],
-        
+    [/faci/i,
+      ["Bine. Dar tu?"]],
+
+      [/gasit/i,
+        ["Bine ai venit!"]],
+  
+    [/bine/i,
+      ["Mă bucur!"]],
+
     [/ok/i,
       ["I`m glad!"]],
 
-      [/fine/i,
-        ["I`m glad!"]],
-  
-  
+    [/fine/i,
+      ["I`m glad!"]],
+
+
     [/are/i,
       ["I`m fine. Thank you!"]],
 
     [/do/i,
       ["Fine. Thank you!"]],
 
-      [/can you/i,
-        ["I can give you just some answers!"]],
+    [/can you/i,
+      ["I can give you just some answers!"]],
 
-        [/ce faci/i,
-          ["Sunt bine. Dar tu?!"]],    
-  
+    [/prost/i,
+      ["Eu sunt doar un software!"]],
+
+    [/narod/i,
+      ["Eu sunt doar un software!"]],
+
+    [/dobitoc/i,
+      ["Eu sunt doar un software!"]],
+
+    [/idiot/i,
+      ["Eu sunt doar un software!"]],
+
+    [/stupid/i,
+      ["I`m just a software!"]],
+
     [/what/i,
       ["What do you think?"]],
 
@@ -123,21 +147,21 @@ document.addEventListener('DOMContentLoaded', function () {
     [/no/i,
       ["You do not seem quite sure."]],
 
-      [/sad/i,
-        ["Is there anything that's bothering you?"]],
-  
-      [/no/i,
-        ["You do not seem quite sure."]],
-  
+    [/sad/i,
+      ["Is there anything that's bothering you?"]],
+
+    [/no/i,
+      ["You do not seem quite sure."]],
+
     [/You/i,
       ["Why do you say that to me?"]],
 
-      [/angry/i,
-        ["Maybe it would feel better for you if you forgive those who upset you."]],
-        
-      [/suparat/i,
-        ["Poate ca te-ai simti mai bine daca i-ai ierta pe cei care te-au suparat."]],
-  
+    [/angry/i,
+      ["Maybe it would feel better for you if you forgive those who upset you."]],
+
+    [/suparat/i,
+      ["Poate ca te-ai simti mai bine daca i-ai ierta pe cei care te-au suparat."]],
+
     [/computer/i,
       ["It`s strange to talk to a computer?"]],
 
@@ -151,9 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ["Please consult the wheater apps"]],
 
     [/(.*)/i,
-      ["I don`t understand!",
-        "Please rephrase!",
-        "Sorry, I don`t know what to say!"]],
+      ["Nu inteleg!<br>I don`t understand!"]],
 
 
 
