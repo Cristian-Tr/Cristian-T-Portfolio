@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-
   // Start message
   function firstAssistentMessage() {
 
@@ -59,20 +58,20 @@ document.addEventListener('DOMContentLoaded', function () {
     [/Cristian/i,
       ["You can find Cristian on Linkedin!"]],
 
-      [/email/i,
-        ["You can find Cristian on Linkedin!"]],
-  
-      [/adresa/i,
-        ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
-  
-        [/mailul/i,
-          ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
-    
+    [/email/i,
+      ["You can find Cristian on Linkedin!"]],
+
+    [/adresa/i,
+      ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
+
+    [/mailul/i,
+      ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
+
     [/adress/i,
-      ["You can find me on Linkedin!"]],
+      ["You can find Cristian on Linkedin!"]],
 
     [/hi/i,
-      ["Hi!"]],
+      ["Hello!"]],
 
     [/bye/i,
       ["Bye!"]],
@@ -86,12 +85,15 @@ document.addEventListener('DOMContentLoaded', function () {
     [/Buna/i,
       ["Salut!"]],
 
+      [/sarbatori/i,
+        ["Sarbatori cu pace si bucurie!"]],
+  
     [/faci/i,
       ["Bine. Dar tu?"]],
 
-      [/gasit/i,
-        ["Bine ai venit!"]],
-  
+    [/gasit/i,
+      ["Bine ai venit!"]],
+
     [/bine/i,
       ["Mă bucur!"]],
 
@@ -101,17 +103,22 @@ document.addEventListener('DOMContentLoaded', function () {
     [/fine/i,
       ["I`m glad!"]],
 
-
     [/are/i,
       ["I`m fine. Thank you!"]],
 
-    [/do/i,
+    [/do you do/i,
       ["Fine. Thank you!"]],
 
+      [/do you have/i,
+        ["Why do you ask me?!"]],
+  
     [/can you/i,
       ["I can give you just some answers!"]],
 
     [/prost/i,
+      ["Eu sunt doar un software!"]],
+
+    [/destept/i,
       ["Eu sunt doar un software!"]],
 
     [/narod/i,
@@ -235,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Retrieves the response
-  function getShortResponse(userText) {
+  function getBotResponse(userText) {
     let botResponse = getText(userText);
 
     let botHtml = '<p class="myAssistentText"><span>' + botResponse + '</span></p>';
@@ -245,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   //processes text
-  function getResponse() {
+  function getUserResponse() {
     let userText = $("#textInput").val();
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -255,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
     setTimeout(() => {
-      getShortResponse(userText);
+      getBotResponse(userText);
     }, 1000)
 
   }
@@ -263,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Enter to send a message
   $("#textInput").keypress(function (e) {
     if (e.which == 13) {
-      getResponse();
+      getUserResponse();
     }
   });
 
