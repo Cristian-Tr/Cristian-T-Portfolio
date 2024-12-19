@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     [/experience/i,
-      ["I have experience with HTML, CSS, SASS, SVG, Bootstrap, JavaScript and jQuery!"]],
+      ["Cristian has experience with HTML, CSS, SASS, SVG, Bootstrap, JavaScript and jQuery!"]],
 
     [/experienta/i,
       ["Cristian are experienta cu HTML, CSS, SASS, SVG, Bootstrap, JavaScript si jQuery!"]],
 
     [/numele/i,
-      ["Denumirea care mi-a fost data este CT!"]],
+      ["Numele meu este CT!"]],
 
     [/name/i,
       ["My name is CT!"]],
@@ -34,29 +34,38 @@ document.addEventListener('DOMContentLoaded', function () {
     [/stiu/i,
       ["Daca vrei sa stii mai multe despre Cristian te rog sa ii trimiti mesaj pe Linkedin!"]],
 
+    [/javascript/i,
+      ["Cristian has experience with JS!"]],
+
+    [/html/i,
+      ["Cristian has experience with HTML!"]],
+
+    [/CSS/i,
+      ["Cristian has no experience with CSS!"]],
+
     [/react/i,
-      ["I don`t have experience with React!"]],
+      ["Cristian has no experience with React!"]],
 
     [/typescript/i,
-      ["I don`t have experience with Typescript!"]],
+      ["Cristian has no experience with Typescript!"]],
 
     [/vue/i,
-      ["I don`t have experience with Vue!"]],
-
-    [/react/i,
-      ["I don`t have experience with React!"]],
+      ["Cristian has no experience with Vue!"]],
 
     [/php/i,
-      ["I don`t have experience with PHP!"]],
+      ["Cristian has no experience with PHP!"]],
 
     [/node/i,
-      ["I don`t have experience with Node.JS!"]],
+      ["Cristian has no experience with Node.JS!"]],
 
     [/like/i,
       ["I like digital technologies that can improve the quality of life!"]],
 
     [/Cristian/i,
       ["You can find Cristian on Linkedin!"]],
+
+    [/recruter/i,
+      ["If you want to know more about Cristian, please send him a message on Linkedin!"]],
 
     [/email/i,
       ["You can find Cristian on Linkedin!"]],
@@ -85,9 +94,24 @@ document.addEventListener('DOMContentLoaded', function () {
     [/Buna/i,
       ["Salut!"]],
 
-      [/sarbatori/i,
-        ["Sarbatori cu pace si bucurie!"]],
-  
+    [/sarbatori/i,
+      ["Sarbatori cu pace si bucurie!"]],
+
+    [/Craciun/i,
+      ["Craciun fericit!"]],
+
+    [/Merry Christmas/i,
+      ["Thank you. Merry Christmas!"]],
+
+    [/an nou/i,
+      ["Multumesc. Un an nou cu bucurii!"]],
+
+    [/La multi ani/i,
+      ["La multi ani cu sanatate!"]],
+
+    [/new year/i,
+      ["Thank you. Happy new year!"]],
+
     [/faci/i,
       ["Bine. Dar tu?"]],
 
@@ -109,14 +133,23 @@ document.addEventListener('DOMContentLoaded', function () {
     [/do you do/i,
       ["Fine. Thank you!"]],
 
-      [/do you have/i,
-        ["Why do you ask me?!"]],
-  
+    [/do you have/i,
+      ["Why do you ask me?!"]],
+
     [/can you/i,
       ["I can give you just some answers!"]],
 
     [/prost/i,
       ["Eu sunt doar un software!"]],
+
+    [/amabil/i,
+      ["Eu sunt doar un software!"]],
+
+    [/kind/i,
+      ["I am just a software!"]],
+
+    [/incantat/i,
+      ["Incantat de cunostinta!"]],
 
     [/destept/i,
       ["Eu sunt doar un software!"]],
