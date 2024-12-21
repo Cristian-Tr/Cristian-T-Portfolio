@@ -124,6 +124,15 @@ document.addEventListener('DOMContentLoaded', function () {
     [/ok/i,
       ["I`m glad!"]],
 
+    [/cine/i,
+      ["De ce te intereseaza?"]],
+
+    [/de ce/i,
+      ["De ce te intereseaza?"]],
+
+    [/cum/i,
+      ["De ce te intereseaza asta?"]],
+
     [/fine/i,
       ["I`m glad!"]],
 
@@ -135,6 +144,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
     [/do you have/i,
       ["Why do you ask me?!"]],
+
+    [/can you/i,
+      ["I can give you just some answers!"]],
+
+    [/who/i,
+      ["Why are you interested?"]],
+
+    [/why/i,
+      ["Why are you interested?"]],
+
+    [/how/i,
+      ["Why are you interested?"]],
+
+    [/can you/i,
+      ["I can give you just some answers!"]],
+
+    [/can you/i,
+      ["I can give you just some answers!"]],
 
     [/can you/i,
       ["I can give you just some answers!"]],

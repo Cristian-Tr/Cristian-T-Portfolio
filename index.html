@@ -8,10 +8,11 @@
   <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="section.css">
   <link rel="stylesheet" href="game.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="chatbot.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -273,81 +274,82 @@
         </div>
       </div>
 
-  </div><br><br>
-
-
-
-  <div class="col-sm-12 col-12" id="game">
-    <p>Catch stars to collect points!</p>
-    <p>Total: <span style="color: magenta;"> 0</span> points</p>
-    <button id="moovingButton" style="background:transparent; border-style: none;"><span
-        class="glyphicon glyphicon-asterisk" style="font-size: 17px;"></span></button>
-
-  </div>
-
-
-
-
-  <div class="col-sm-12 col-12">
-
-    <div class="planet-container">
-      <section>
-        <div id="earth">
-          <div class="cloud"></div>
-        </div>
-      </section>
-
-    </div>
-
-
     </main>
 
-    <!-- MY ASSISTENT -->
-    <div class="row" class="container-fluid align-items-center">
 
-      <div class="chat-bar-collapsible" style="margin: auto; width: 350px;">
 
-        <button id="chat-button" type="button" class="collapsible" class="text-center">
-          <div class="head">
-            <div class="head-bg"></div>
-            <div class="eye-l"></div>
-            <div class="eyes-r"></div>
-            <div class="mouth"></div>
-          </div>
-          CT ASSISTENT
-          <i class="fa fa-hand-pointer-o"></i>
+    <section>
+      <div class="col-sm-12 col-12" id="game">
+        <p>Catch stars to collect points!</p>
+        <p>Total: <span style="color: magenta;"> 0</span> points</p>
+        <button id="moovingButton" style="background:transparent; border-style: none;"><span
+            class="glyphicon glyphicon-asterisk" style="font-size: 17px;"></span>
         </button>
 
-        <div class="content">
-          <div class="full-chat-block">
+      </div>
+    </section>
 
-            <div class="outer-container">
-              <div class="chat-container">
 
-                <div id="conversationPage">
-                  <h5 id="conversationStartTime"></h5>
-                  <p id="startMessage" class="myAssistentText"></p>
-                </div>
 
-                <div id="userInput">
-                  <input id="textInput" class="input-box" type="text" name="msg"
-                    style="font-size: 17px; color: cyan; text-shadow: .3px .8px 1px black;"
-                    placeholder="Type your message and tap Enter">
-                  <p></p>
-                </div>
+    <div class="col-sm-12 col-12">
 
-                <div id="chat-bar-bottom">
-                  <p></p>
-                </div>
-
-              </div>
-            </div>
-
+      <div class="planet-container">
+        <footer>
+          <div id="earth">
+            <div class="cloud"></div>
           </div>
-        </div>
-
+        </footer>
       </div>
     </div>
+
+  </div><br><br>
+
+  <!-- MY ASSISTENT -->
+  <div class="row" class="container-fluid align-items-center">
+
+    <div class="chat-bar-collapsible" style="margin: auto; width: 350px;">
+
+      <button id="chat-button" type="button" class="collapsible" class="text-center">
+        <div class="head">
+          <div class="head-bg"></div>
+          <div class="eye-l"></div>
+          <div class="eyes-r"></div>
+          <div class="mouth"></div>
+        </div>
+        CT ASSISTENT
+        <i class="fa fa-hand-pointer-o"></i>
+      </button>
+
+      <div class="content">
+        <div class="full-chat-block">
+
+          <div class="outer-container">
+            <div class="chat-container">
+
+              <div id="conversationPage">
+                <h5 id="conversationStartTime"></h5>
+                <p id="startMessage" class="myAssistentText"></p>
+              </div>
+
+              <div id="userInput">
+                <input id="textInput" class="input-box" type="text" name="msg"
+                  style="font-size: 17px; color: cyan; text-shadow: .3px .8px 1px black;"
+                  placeholder="Type your message and tap Enter">
+                <p></p>
+              </div>
+
+              <div id="chat-bar-bottom">
+                <p></p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
   </div>
