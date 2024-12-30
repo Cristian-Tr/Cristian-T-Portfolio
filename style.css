@@ -106,28 +106,8 @@ h5 {
   .scrambleText {
     padding-top: 1px;
     margin: 1px auto;
-    font-size: 27px;
+    font-size: 35px;
     height: 53px;
   }
 }
 
-.chars {
-  padding-top: 1px;
-  width: 100%;
-  height: 35px;
-  font-size: 17px;
-  font-weight: 900;
-  margin: auto;
-  color: black;
-  font-family: "Lato", "Montserrat", "Times New Roman";
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .chars {
-    padding-top: 1px;
-    margin: 1px auto;
-    font-size: 25px;
-    height: 53px;
-  }
-}
