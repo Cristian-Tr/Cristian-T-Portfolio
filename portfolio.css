@@ -69,22 +69,6 @@
 	width: 91px;
 	height: 91px;
 	border-radius: 50%;
-	border: 10px solid magenta;
-	background-image: url(./flashon.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.thumbnail .window2 {
-	display: block;
-	margin-top: 35px;
-	margin-bottom: 35px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 91px;
-	height: 91px;
-	border-radius: 50%;
 	border: 10px solid springgreen;
 	background-image: url(./green-adventure.png);
 	background-size: 100% 100%;
@@ -92,7 +76,7 @@
 	background-position: center;
 }
 
-.thumbnail .window3 {
+.thumbnail .window2 {
 	display: block;
 	margin-top: 35px;
 	margin-bottom: 35px;
@@ -108,7 +92,7 @@
 	background-position: center;
 }
 
-.thumbnail .window4 {
+.thumbnail .window3 {
 	display: block;
 	margin-top: 35px;
 	margin-bottom: 35px;
