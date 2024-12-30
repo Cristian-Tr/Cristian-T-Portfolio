@@ -15,7 +15,7 @@
 	background-color: white;
 	text-align: center;
 	margin: auto;
-	margin-top: 53px;
+	margin-top: -20px;
 	border: 3.5px solid black;
 	/*box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
   transition: box-shadow 0.5s;*/
@@ -101,7 +101,7 @@
 	width: 91px;
 	height: 91px;
 	border-radius: 50%;
-	border: 10px solid magenta;
+	border: 10px solid yellow;
 	background-image: url(./nobilio.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -253,6 +253,13 @@ strong {
 	margin-top: -27px;
 	padding: 1px;
 	font-family: Montserrat, sans-serif;
+}
+
+#wally-luna img {
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	/* animation: rotation 12s infinite linear; */
 }
 
 @keyframes rotation {
