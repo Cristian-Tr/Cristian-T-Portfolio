@@ -35,7 +35,7 @@
 #chat-button {
   width: 100%;
   text-align: center;
-  color: cyan;
+  color: dodgerblue;
   font-size: 17px;
   text-shadow: 1px 1px 1px black;
   animation: 3.5s animated-text linear infinite;
@@ -99,7 +99,7 @@
   display: "block";
   content: "";
   position: absolute;
-  background-color: cyan;
+  background-color: dodgerblue;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -114,7 +114,7 @@
   display: "block";
   content: "";
   position: absolute;
-  background-color: cyan;
+  background-color: dodgerblue;
   width: 12px;
   height: 12px;
   z-index: 1px;
