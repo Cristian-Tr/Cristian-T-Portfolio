@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function firstAssistentMessage() {
 
 
-    let firstMessage = "Buna! Cu ce te pot ajuta?<br>Scrie-mi fara diacritice!<br>Hi! How can I help you?"
+    let firstMessage = "Buna! Ce doresti sa stii despre Cristian?<br>Scrie-mi fara semne diacritice!<br>Hi! What do you want to know about Cristian?"
     document.getElementById("startMessage").innerHTML = '<p class="myAssistentText"><span>' + firstMessage + '</span></p>';
 
   }

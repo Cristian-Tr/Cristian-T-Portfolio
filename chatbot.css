@@ -232,16 +232,16 @@
 }
 
 .userText span {
-  font-size: 12px;
-  line-height: 1em;
+  font-size: 14px;
+  line-height: 17px;
   display: inline-block;
   color: springgreen;
   background: magenta;
   text-shadow: .1px .1px .1px black;
-  padding: 10px;
+  padding: 8px;
   border-radius: 8px;
   border-bottom-right-radius: 2px;
-  max-width: 80%;
+  max-width: 90%;
   margin-right: 10px;
   animation: floatup .5s forwards
 }
@@ -252,17 +252,17 @@
 }
 
 .myAssistentText span {
-  font-size: 12px;
-  line-height: 1em;
+  font-size: 14px;
+  line-height: 17px;
   display: inline-block;
   background: springgreen;
   border: 1px solid grey;
   color: magenta;
   text-shadow: .1px .1px .1px black;
-  padding: 10px;
+  padding: 8px;
   border-radius: 8px;
   border-bottom-left-radius: 2px;
-  max-width: 100%;
+  max-width: 90%;
   margin-left: 10px;
   animation: floatup .5s forwards
 }
