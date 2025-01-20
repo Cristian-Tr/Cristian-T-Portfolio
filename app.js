@@ -86,14 +86,4 @@ document.addEventListener('DOMContentLoaded', function () {
   next()
 
 
-  var button = document.querySelector('#moovingButton');
-  var clicks = 1;
-  // var message;
-  // var color;
-
-  button.addEventListener('click', function () {
-    document.querySelector('p span').innerText = clicks;
-    clicks++;
-  });
-
 });

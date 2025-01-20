@@ -1,3 +1,13 @@
+.assistent {
+  margin:auto;
+}
+
+@media (min-width: 768px) {
+  .assistent  {
+    margin-left: 1px;
+  }
+}
+
 .chat-bar-collapsible {
   position: fixed;
   bottom: 0;
@@ -35,7 +45,7 @@
 #chat-button {
   width: 100%;
   text-align: center;
-  color: dodgerblue;
+  color: cyan;
   font-size: 17px;
   text-shadow: 1px 1px 1px black;
   animation: 3.5s animated-text linear infinite;
@@ -99,7 +109,7 @@
   display: "block";
   content: "";
   position: absolute;
-  background-color: dodgerblue;
+  background-color: cyan;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -114,7 +124,7 @@
   display: "block";
   content: "";
   position: absolute;
-  background-color: dodgerblue;
+  background-color: cyan;
   width: 12px;
   height: 12px;
   z-index: 1px;
@@ -178,20 +188,20 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   border: 1px solid grey;
-  background-color: dodgerblue;
+  background-color: cyan;
   background-color: transparent;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
 }
 
 .outer-container {
-  min-height: 350px;
+  min-height: 530px;
   bottom: 0%;
   position: relative;
 }
 
 .chat-container {
-  max-height: 350px;
+  max-height: 530px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -289,15 +299,4 @@
   scrollbar-width: none;
   height: max-content;
   transition: max-height 0.2s ease-out;
-}
-
-@media screen and (min-width: 768px) {
-  .content {
-    width: 95%;
-  }
-
-  #chat-button {
-    width: 95%;
-  }
-
 }
