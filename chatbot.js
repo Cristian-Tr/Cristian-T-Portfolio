@@ -1,7 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  // ANIMATED HEARTS - START
+  function initparticles() {
+    animatedHearts();
 
-  // Start message
+  }
+// SET HEARTS SIZE & NUMBER
+  function animatedHearts() {
+    $.each($(".particletext.hearts"), function () {
+      var heartcount = ($(this).width() / 71) * 4;
+      for (var i = 0; i <= heartcount; i++) {
+        var size = ($.rnd(53, 125) / 10);
+        $(this).append('<span class="particle" style="top:' + $.rnd(17, 80) + '%; left:' + $.rnd(0, 95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0, 30) / 10) + 's;"></span>');
+      }
+    });
+  }
+// CALCULATE RANDOM VALUE
+  jQuery.rnd = function (m, n) {
+    m = parseInt(m);
+    n = parseInt(n);
+    return Math.floor(Math.random() * (n - m + 1)) + m;
+  }
+
+  initparticles();
+//ANIMATED HEARTS - END
+
+  // CT ASSISTENT - START
   function firstAssistentMessage() {
 
 
@@ -12,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   firstAssistentMessage();
 
-
+//QUESTION - ANSWERS PAIRS LIST
   const phraseList = [
 
 
@@ -259,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    //find a match betwen user question and chatbot statements list
+    // MATCH BETWEN QUSTION & ANSWER
     respond(str) {
       for (let i = 0; i < this.keys.length; i++) {
         let statements = this.keys[i];
@@ -283,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var chatbot = new chatbotExpressions();
 
-  // Fold conversation page
+  // FOLDIN CONVERSATION PAGE
   var fold = document.getElementsByClassName("collapsible");
 
   for (let i = 0; i < fold.length; i++) {
@@ -301,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Retrieves the response
+  // RETRIEVES THE ANSWER
   function getBotResponse(userText) {
     let botResponse = getText(userText);
 
@@ -311,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
   }
 
-  //processes text
+  // TEXT PROCESS
   function getUserResponse() {
     let userText = $("#textInput").val();
 
@@ -327,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
-  // Enter to send a message
+  // SEND MESSAGE
   $("#textInput").keypress(function (e) {
     if (e.which == 13) {
       getUserResponse();
@@ -349,7 +373,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function editInputText(input) {
-    //Change chars in lowercase, remove sign-?, multiple spaces and trailing space
+    // SOME SETTINGS ABOUT LOWERCASE CHARS, REMOVE SIGN ? & MULTIPLE SPACES
     return input.toLowerCase().replace("?", "").replace(/  +/g, ' ').trim();
   }
 
@@ -360,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function () {
       eval = math.evaluate(input);
     }
     catch (err) {
-      //return "Try asking something else!";
+      //RETURN "NU INTELEG! - I DON`T UNDERSTAND!";
       return null;
     }
     return eval;
@@ -368,9 +392,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   function getRandomItem(arr) {
-    // get random index value
+    // CALCULATE RANDOM INDEX VALUE
     const randomIndex = Math.floor(Math.random() * arr.length);
-    // get random item
+    // CALCULTAE RANDOM ITEM
     const item = arr[randomIndex];
     return item;
   }

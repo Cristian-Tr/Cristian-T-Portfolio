@@ -1,3 +1,4 @@
+/* GENERAL SETTINGS */
 html,
 body {
   margin: 0px;
@@ -13,7 +14,26 @@ body {
   padding-left: 8px;
 }
 
-/* My portrait picture */
+/* BOOTSTRAP JUMBOTRON */
+.jumbotron {
+	background-color: white;
+	color: white;
+	margin-top: -27px;
+	padding: 1px;
+	font-family: Montserrat, sans-serif;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotateY(0deg);
+	}
+
+	to {
+		transform: rotateY(360deg);
+	}
+}
+
+/* MY PICTURE SETTINGS */
 .portrait-picture {
   margin: 8px auto;
   margin-top: 53px;
@@ -32,7 +52,7 @@ body {
   width: 100%;
 }
 
-/* My name */
+/* MY NAME */
 .jumbotron h1 {
   text-align: center;
   margin-top: 1px;
@@ -45,6 +65,7 @@ body {
     0 5px 10px rgba(0, 0, 255, 0.25), 0 10px 10px rgba(0, 0, 255, 0.2);
 }
 
+/* MY ACTIVITIES - SCRAMBLE TEXT*/
 h2 {
   text-align: center;
   font-weight: 900;
@@ -54,30 +75,6 @@ h2 {
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 255, 0.1), 0 0 5px rgba(0, 0, 255, 0.1),
     0 1px 3px rgba(0, 0, 255, 0.3), 0 3px 5px rgba(0, 0, 255, 0.2),
     0 5px 10px rgba(0, 0, 255, 0.25), 0 10px 10px rgba(0, 0, 255, 0.2);
-}
-
-h3 {
-  font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-shadow: 3.5px 1.7px 1px blue;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  text-align: center;
-}
-
-h4 {
-  color: black;
-  font-weight: 100;
-  margin-top: 1px;
-  font-family: "Lato", "Times New Roman";
-}
-
-h5 {
-  color: black;
-  font-weight: 100;
-  margin-top: 3px;
-  font-family: "Lato", "Times New Roman";
 }
 
 .scrambleContainer {
@@ -111,3 +108,244 @@ h5 {
   }
 }
 
+/* PORTFOLIO  */
+h3 {
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 3.5px 1.7px 1px blue;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+h4 {
+  color: black;
+  font-weight: 100;
+  margin-top: 1px;
+  font-family: "Lato", "Times New Roman";
+}
+
+h5 {
+  color: black;
+  font-weight: 100;
+  margin-top: 3px;
+  font-family: "Lato", "Times New Roman";
+}
+
+@media (min-width: 768px) {
+	.col-sm-2 {
+		width: 20%;
+	}
+}
+
+/* Rockets */
+/* My portfolio websites links */
+.thumbnail {
+	border-radius: 50% 50% 25% 25% / 50% 50% 40% 40%;
+	width: 100%;
+	max-width: 251px;
+	transform-style: preserve-3d;
+	padding: 1px;
+	background-color: white;
+	text-align: center;
+	margin: auto;
+	margin-top: 1px;
+	border: 3.5px solid black;
+	/*box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
+  transition: box-shadow 0.5s;*/
+	animation: float 12s ease-in-out infinite;
+}
+
+@media (min-width: 1700px) {
+	.thumbnail {
+		width: 71%;
+	}
+}
+
+@media (min-width: 2500px) {
+	.thumbnail {
+		width: 53%;
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(1px);
+	}
+
+	25% {
+		transform: translatey(-5px);
+	}
+
+	50% {
+		transform: translatey(8px);
+	}
+
+	75% {
+		transform: translatey(-5px);
+	}
+
+	100% {
+		transform: translatey(1px);
+	}
+}
+
+.thumbnail:hover {
+	box-shadow: inset 7px 7px 14px #cccccc, inset -7px -7px 14px white;
+}
+
+.thumbnail .window1 {
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 91px;
+	height: 91px;
+	border-radius: 50%;
+	border: 10px solid springgreen;
+	background-image: url(./green-escapade.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thumbnail .window2 {
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 91px;
+	height: 91px;
+	border-radius: 50%;
+	border: 10px solid magenta;
+	background-image: url(./nobilio.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thumbnail img {
+	display: block;
+	margin-top: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 91%;
+	height: 91px;
+	border: 2.5px solid black;
+}
+
+.thumbnail video {
+	display: block;
+	margin-top: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 71%;
+	height: 123px;
+}
+
+@media (min-width: 768px) {
+	.thumbnail video {
+		width: 85%;
+		height: 79px;
+	}
+}
+
+.thumbnail::before,
+.thumbnail:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.thumbnail::before {
+	width: 54%;
+	height: 8px;
+	border: 3.5px solid black;
+	bottom: -10px;
+	border-radius: 0% 0% 25% 25% / 50% 50% 40% 40%;
+}
+
+.thumbnail:after {
+	height: 183px;
+	width: 100%;
+	border: 3.5px solid black;
+	bottom: 0;
+	z-index: -10;
+	transform: translateX(-50%) translateZ(-1px);
+	border-radius: 50% 50% 10% 10% / 90% 90% 20% 20%;
+	box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
+}
+
+.jet-rocket {
+	border-bottom: 71px solid rgba(142, 206, 236, 0.52);
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	width: 100%;
+	max-width: 81px;
+	z-index: 1;
+	margin: auto;
+	border-radius: 0px 0px 50% 50%;
+	box-shadow: 0px 10px 20px rgba(168, 241, 255, 0.23),
+		inset 0px 23px 6px lightblue;
+	opacity: 0.7;
+	filter: blur(4px);
+}
+
+/* THUMBNAIL AS A LINK */
+.span-link {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.item h5 {
+	font-size: 12px;
+	text-align: center;
+	font-style: italic;
+}
+
+@media (min-width: 768px) {
+	.item h5 {
+		font-size: 23px;
+	}
+}
+
+.item img {
+	width: 70%;
+	margin: auto;
+}
+
+@media (min-width: 768px) {
+	.item img {
+		width: 59%;
+	}
+}
+
+.item span {
+	font-style: normal;
+}
+
+.col-sm-3 {
+	padding: 9px;
+}
+
+@media (min-width: 769px) {
+	#portfolio .col-sm-3 {
+		width: 20%;
+	}
+}
+
+strong {
+	font-size: 20.5px;
+	color: white;
+	text-shadow: 1.8px 1.8px 1.8px blue;
+}

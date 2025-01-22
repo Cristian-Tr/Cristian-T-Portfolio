@@ -1,13 +1,64 @@
+/* ASSISTENT SETTINGS */
 .assistent {
-  margin:auto;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
-  .assistent  {
+  .assistent {
     margin-left: 1px;
   }
 }
+/* HEARTS SETTINGS */
+.animated-text {
+  margin-top: 8px;
+}
 
+.hearts {
+  >.particle {
+    opacity: 0;
+    position: absolute;
+    background-color: red;
+    animation: hearts 3s ease-in infinite;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      border-radius: 100px;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(204, 42, 93, 1);
+    }
+
+    &:before {
+      transform: translateX(-50%);
+    }
+
+    &:after {
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@keyframes hearts {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0%) rotate(45deg);
+  }
+
+  20% {
+    opacity: 0.8;
+    transform: translate(0, -20%) rotate(45deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, -1000%) rotate(45deg);
+  }
+}
+/* FOLDING CONVERSATION SPACE SETTINGS */
 .chat-bar-collapsible {
   position: fixed;
   bottom: 0;
@@ -17,7 +68,7 @@
 }
 
 @media (min-width: 768px) {
-  .chat-bar-collapsible  {
+  .chat-bar-collapsible {
     width: 350px;
   }
 }
@@ -30,14 +81,14 @@
   color: white;
   cursor: pointer;
   width: 100%;
-  height: 85px;
+  height: 125px;
   text-align: center;
   outline: none;
   font-size: 12px;
 }
 
 @media (min-width: 768px) {
-  .collapsible  {
+  .collapsible {
     width: 350px;
   }
 }
@@ -59,7 +110,6 @@
 }
 
 /* SMILEY FACE ANIMATION */
-
 .head {
   margin: auto;
   margin-top: 5px;
@@ -75,18 +125,23 @@
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(-1deg);
   }
+
   35% {
     transform: rotate(3deg);
   }
+
   50% {
     transform: rotate(-4deg);
   }
+
   75% {
     transform: rotate(5deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -96,11 +151,9 @@
   border-radius: 26% 26% 45% 45%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(232, 165, 84, 1) 40%,
-    rgba(219, 145, 74, 1) 99%
-  );
+  background: linear-gradient(to bottom,
+      rgba(232, 165, 84, 1) 40%,
+      rgba(219, 145, 74, 1) 99%);
   position: relative;
   box-shadow: 0 3px 10px rgba(106, 69, 40, 0.1);
 }
@@ -137,18 +190,19 @@
 }
 
 @keyframes blink {
-  0% {
-  }
+  0% {}
+
   10% {
     margin-top: 8px;
     height: 1px;
   }
+
   30% {
     margin-top: 0px;
     height: 12px;
   }
-  100% {
-  }
+
+  100% {}
 }
 
 .mouth {
@@ -168,14 +222,17 @@
     width: 35px;
     top: 25px;
   }
+
   35% {
     width: 41px;
     top: 25px;
   }
+
   75% {
     width: 35px;
     top: 25px;
   }
+
   100% {
     width: 43px;
     top: 25px;
@@ -214,7 +271,7 @@
   display: none;
 }
 
-/* Chat bubbles */
+/* CHAT SPACE SETTINGS */
 
 #userInput {
   width: 100%;

@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
-
-
+  // MY ACTIVITIES - SCRAMBLE TEXT
   class TextScramble {
     constructor(el) {
       this.el = el
@@ -57,9 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // ——————————————————————————————————————————————————
-  // Example
-  // ——————————————————————————————————————————————————
+  // MY ACTIVITIES - TEXTS
 
   const phrases = [
     'DIGITAL TECHNOLOGIES',
@@ -71,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const el = document.querySelector('.scrambleText')
   const fx = new TextScramble(el)
-
-
 
 
   let counter = 0
