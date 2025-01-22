@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 // SET HEARTS SIZE & NUMBER
   function animatedHearts() {
-    $.each($(".particletext.hearts"), function () {
+    $.each($(".animated.hearts"), function () {
       var heartcount = ($(this).width() / 71) * 4;
       for (var i = 0; i <= heartcount; i++) {
         var size = ($.rnd(53, 125) / 10);
