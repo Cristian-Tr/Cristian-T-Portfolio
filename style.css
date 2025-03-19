@@ -111,7 +111,7 @@ h2 {
 
 /* PORTFOLIO  */
 h3 {
-  font-weight: 100;
+  font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-shadow: 3.5px 1.7px 1px blue;
@@ -122,14 +122,14 @@ h3 {
 
 h4 {
   color: black;
-  font-weight: 100;
+  font-weight: 700;
   margin-top: 1px;
   font-family: "Lato", "Times New Roman";
 }
 
 h5 {
   color: black;
-  font-weight: 100;
+  font-weight: 700;
   margin-top: 3px;
   font-family: "Lato", "Times New Roman";
 }
