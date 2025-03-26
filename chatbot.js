@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     animatedHearts();
 
   }
-// SET HEARTS SIZE & NUMBER
+  // SET HEARTS SIZE & NUMBER
   function animatedHearts() {
     $.each($(".animated.hearts"), function () {
       var heartcount = ($(this).width() / 71) * 4;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-// CALCULATE RANDOM VALUE
+  // CALCULATE RANDOM VALUE
   jQuery.rnd = function (m, n) {
     m = parseInt(m);
     n = parseInt(n);
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   initparticles();
-//ANIMATED HEARTS - END
+  //ANIMATED HEARTS - END
 
   // CT ASSISTENT - START
   function firstAssistentMessage() {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   firstAssistentMessage();
 
-//QUESTION - ANSWERS PAIRS LIST
+  //QUESTION - ANSWERS PAIRS LIST
   const phraseList = [
 
 
@@ -112,11 +112,41 @@ document.addEventListener('DOMContentLoaded', function () {
     [/hello/i,
       ["Hi!"]],
 
+    [/ziua/i,
+      ["Buna!"]],
+
+    [/seara/i,
+      ["Buna!"]],
+
+    [/noapte/i,
+      ["Noapte buna!"]],
+
+    [/night/i,
+      ["Good night!"]],
+
+    [/evening/i,
+      ["Hi!"]],
+
+    [/morning/i,
+      ["Hi!"]],
+
     [/salut/i,
       ["Bună!"]],
 
     [/Buna/i,
       ["Salut!"]],
+
+    [/La revedere/i,
+      ["Pe curand!"]],
+
+    [/pe curand/i,
+      ["La revedere!"]],
+
+    [/soon/i,
+      ["Goodbye!"]],
+
+    [/goodbye/i,
+      ["See you soon!"]],
 
     [/sarbatori/i,
       ["Sarbatori cu pace si bucurie!"]],
