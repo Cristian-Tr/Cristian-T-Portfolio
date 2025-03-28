@@ -163,29 +163,42 @@
   content: "";
   position: absolute;
   background-color: cyan;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  left: 10px;
+  left: 8px;
   top: 8px;
   transform: rotate(-10deg);
-  animation: blink 3.5s ease-in-out;
+  animation: blink 5s ease-in-out;
   animation-iteration-count: infinite;
 }
 
-.eyes-r {
+.eye-r {
   display: "block";
   content: "";
   position: absolute;
   background-color: cyan;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   z-index: 1px;
   border-radius: 50%;
-  left: 50px;
+  left: 46px;
   top: 8px;
   transform: rotate(10deg);
-  animation: blink 3.5s ease-in-out;
+  animation: blink 5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.iris{
+  width: 8px;
+  height: 8px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: iris-blink 5s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -199,10 +212,23 @@
 
   30% {
     margin-top: 0px;
-    height: 12px;
+    height: 18px;
   }
 
   100% {}
+}
+
+
+@keyframes iris-blink {
+  0% {}
+  10% {
+    width: 0;
+    height: 0;
+  }
+  30% {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .mouth {
@@ -212,7 +238,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 25px;
+  top: 28px;
   width: 53px;
   animation: mouth 8s infinite alternate;
 }
@@ -220,22 +246,19 @@
 @keyframes mouth {
   0% {
     width: 35px;
-    top: 25px;
+    top: 28px;
   }
 
   35% {
     width: 41px;
-    top: 25px;
   }
 
   75% {
     width: 35px;
-    top: 25px;
   }
 
   100% {
     width: 43px;
-    top: 25px;
   }
 }
 
