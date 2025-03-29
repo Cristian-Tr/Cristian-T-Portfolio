@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
     'Digital technologies',
     'Frontend Development',
     'Software implementation',
+    'Website maintenance',
+    'Data analytics',
+    'Cookie management',
     'Email marketing',
     'Explore my portfolio!',
   ]
