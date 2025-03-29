@@ -62,13 +62,19 @@
     width: 318px;
     height: 44px;
     top: 28px;
-    left: -4px;
+    left: -20px;
     margin: auto;
     border-radius: 50%;
     border: 3.5px solid cyan;
     background: blue;
     position: relative;
     animation: spaceship-ring 8s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+	#spaceship {
+        left: -1px;
+	}
 }
 
 @keyframes spaceship-ring {
