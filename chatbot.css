@@ -1,4 +1,4 @@
-/* ASSISTENT SETTINGS */
+/* CHATBOT POSITION */
 .assistent {
   margin: auto;
 }
@@ -9,7 +9,7 @@
   }
 }
 
-/* HEARTS SETTINGS */
+/* HEARTS ANIMATION */
 .animated-text {
   margin-top: 8px;
 }
@@ -112,6 +112,7 @@
 }
 
 /* SMILEY FACE ANIMATION */
+/* HEAD SETTINGS */
 .head {
   margin: auto;
   margin-top: 5px;
@@ -153,13 +154,12 @@
   border-radius: 26% 26% 45% 45%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,
-      rgba(232, 165, 84, 1) 40%,
-      rgba(219, 145, 74, 1) 99%);
+  background: #ffa500;
   position: relative;
   box-shadow: 0 3px 10px rgba(106, 69, 40, 0.1);
 }
 
+/* EYES SETTINGS */
 .eye-l {
   display: "block";
   content: "";
@@ -235,8 +235,9 @@
   }
 }
 
+/* MOUTH SETTINGS */
 .mouth {
-  border-bottom: 5px solid #c15b5b;
+  border-bottom: 5px solid red;
   border-radius: 0 0 53px 53px;
   height: 17px;
   position: absolute;
@@ -266,6 +267,7 @@
   }
 }
 
+/* CHAT SPACE SETTINGS */
 .content {
   width: 100%;
   max-height: 0;
@@ -298,8 +300,7 @@
   display: none;
 }
 
-/* CHAT SPACE SETTINGS */
-
+/* USER SPACE SETTINGS */
 #userInput {
   width: 100%;
 }
