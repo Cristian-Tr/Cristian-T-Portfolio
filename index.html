@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ufo.css">
   <link rel="stylesheet" href="chatbot.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
@@ -22,29 +23,30 @@
 </head>
 
 <body>
-  <!-- BOOTSTRAP INITIALIZATION -->
+  <!-- BOOTSTRAP INITIALIZATION - START -->
   <div class="jumbotron text-center">
-    <!-- HEADER -->
+    <!-- HEADER - START -->
     <header>
       <div class="container-fluid align-items-center">
-        <!-- My picture -->
+        <!-- MY PICTURE -->
         <div class="portrait-picture">
         </div>
         <h1>Cristian T.</h1>
         <!-- MY ACTIVITIES -->
         <div class="scrambleContainer">
-          <div class="scrambleText"></div>
+          <h2 class="scrambleText"></h2>
         </div>
     </header>
+    <!-- HEADER - STOP -->
 
-    <!-- PORTFOLIO -->
+    <!-- PORTFOLIO - START -->
     <main>
 
       <div class="container-fluid" class="text-center">
         <div class="col-sm-12" style="margin-top: 35px; margin-bottom: 35px;">
 
-          <!-- GREEN ESCAPADE LINK  -->
-          <div class="col-sm-6 col-xs-12">
+          <!-- GREEN ESCAPADE - APP LINK - START -->
+          <div class="col-sm-4 col-xs-12">
             <div class="thumbnail"><br>
               <div class="window1"></div>
               <h3 style='color: springgreen; text-shadow: 1.8px 1.8px 1.8px black;'>
@@ -67,9 +69,40 @@
             </div><br><br>
 
           </div>
+          <!-- GREEN ESCAPADE - APP LINK - STOP -->
 
-          <!-- NOBILIO LINK  -->
-          <div class="col-sm-6 col-xs-12">
+          <!-- UFO - FRONTEND TECHNOLOGIES - START -->
+          <div class="col-sm-4 col-xs-12">
+
+
+            <div class="spaceship-wrap">
+              <div class='center'>
+                <div class="spaceship-inner">
+                  <div id='spaceship'>
+                    <ul class='circles'>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="cabin">
+
+                    </div>
+                    <div class="reactor"></div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div><br><br><br><br><br>
+
+          </div>
+          <!-- UFO - FRONTEND TECHNOLOGIES - STOP -->
+
+          <!-- NOBILIO DELICATE - APP LINK - START -->
+          <div class="col-sm-4 col-xs-12">
             <div class="thumbnail"><br>
               <div class="window2"></div>
               <h3 style='color: magenta; text-shadow: 1.8px 1.8px 1.8px black;'>
@@ -92,18 +125,20 @@
             </div><br><br>
 
           </div>
+          <!-- NOBILIO DELICATE - APP LINK - STOP -->
 
         </div>
-
       </div>
 
     </main>
-
+    <!-- PORTFOLIO - STOP -->
 
     <!-- FOOTER -->
     <div class="row" class="container-fluid text-center">
+
+      <!-- CT CHATBOT - START -->
       <div class="assistent">
-        <!-- MY ASSISTENT -->
+
         <div class="chat-bar-collapsible" style="margin: auto;">
 
           <button id="chat-button" type="button" class="collapsible" class="text-center">
@@ -119,7 +154,7 @@
             </div>
 
             <div class="animated-text">
-              <span class="animated hearts">I`m CT robot 👆 Click to chat!</span>
+              <h4><span class="animated hearts">I`m CT robot 👆 Click to chat!</span></h4>
             </div>
           </button>
 
@@ -137,7 +172,7 @@
                   <div id="userInput">
                     <input id="textInput" class="input-box" type="text" name="msg"
                       style="font-size: 17px; color: cyan; text-shadow: .3px .8px 1px black;"
-                      placeholder="Type a message & Enter">
+                      placeholder="✍️ Type a message & Enter">
                     <p></p>
                   </div>
 
@@ -154,7 +189,10 @@
         </div>
       </div>
     </div>
+    <!-- CT CHATBOT - STOP -->
+
   </div>
+  <!-- BOOTSTRAP INITIALIZATION - STOP -->
 
 </body>
 

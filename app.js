@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // MY ACTIVITIES - TEXTS
 
   const phrases = [
-    'DIGITAL TECHNOLOGIES',
-    'FRONTEND DEVELOPMENT',
-    'SOFTWARE IMPLEMENTATION',
-    'EMAIL MARKETING',
-    'EXPLORE MY PORTFOLIO!',
+    'Digital technologies',
+    'Frontend Development',
+    'Software implementation',
+    'Email marketing',
+    'Explore my portfolio!',
   ]
 
   const el = document.querySelector('.scrambleText')
