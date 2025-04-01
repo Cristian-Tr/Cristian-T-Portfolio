@@ -95,7 +95,7 @@ h2 {
 /* PORTFOLIO  */
 h3 {
 	font-weight: 800;
-	font-family:  "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
+	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
 	color: white;
 	text-shadow: 3.5px 1.7px 1px blue;
 	margin-top: 1px;
@@ -125,7 +125,7 @@ h5 {
 /* ROCKETS */
 /* MY PORTFOLIO  */
 .thumbnail {
-	border-radius: 50% 50% 25% 25% / 50% 50% 40% 40%;
+	border-radius: 53% 53% 17% 17% / 53% 53% 44% 44%;
 	width: 100%;
 	max-width: 287px;
 	transform-style: preserve-3d;
@@ -220,16 +220,16 @@ h5 {
 	margin-right: auto;
 	width: 98%;
 	height: 98px;
-	border: 2.5px solid black;
 }
 
-.thumbnail video {
+video {
 	display: block;
-	margin-top: 18px;
+	margin-top: 17px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 71%;
 	background: transparent;
+	border: .8px solid black;
 }
 
 .thumbnail::before,
@@ -240,22 +240,14 @@ h5 {
 	transform: translateX(-50%);
 }
 
-.thumbnail::before {
-	width: 88%;
-	height: 8px;
-	border: 3.5px solid black;
-	bottom: -10px;
-	border-radius: 0% 0% 25% 25% / 50% 50% 40% 40%;
-}
-
 .thumbnail:after {
 	height: 188px;
 	width: 100%;
 	border: 3.5px solid black;
-	bottom: 0;
+	bottom: -2px;
 	z-index: -10;
 	transform: translateX(-50%) translateZ(-1px);
-	border-radius: 50% 50% 10% 10% / 90% 90% 20% 20%;
+	border-radius: 53% 53% 17% 17% / 80% 80% 17% 17%;
 	box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
 }
 
@@ -269,22 +261,6 @@ h5 {
 	top: 0;
 	left: 0;
 	z-index: 9999;
-}
-
-/* JET ROCKETS */
-.jet-rocket {
-	border-bottom: 35px solid rgba(142, 206, 236, 0.52);
-	border-left: 18px solid transparent;
-	border-right: 18px solid transparent;
-	width: 100%;
-	max-width: 88px;
-	z-index: 1;
-	margin: auto;
-	border-radius: 0px 0px 50% 50%;
-	box-shadow: 0px 5px 10px rgba(168, 241, 255, 0.23),
-		inset 0px 17px 8px dodgerblue;
-	opacity: 0.7;
-	filter: blur(4px);
 }
 
 .item h5 {

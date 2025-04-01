@@ -154,12 +154,18 @@ document.addEventListener('DOMContentLoaded', function () {
     [/La revedere/i,
       ["Pe curand!"]],
 
+      [/frumoasa/i,
+        ["Pe curand!"]],
+  
     [/pe curand/i,
       ["La revedere!"]],
 
     [/soon/i,
       ["Goodbye!"]],
 
+      [/day/i,
+        ["Goodbye!"]],
+  
     [/goodbye/i,
       ["See you soon!"]],
 

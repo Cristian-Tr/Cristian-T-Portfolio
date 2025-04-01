@@ -57,52 +57,30 @@
     top: 28px;
     margin: auto;
     border-radius: 50%;
-    border: 3.5px solid cyan;
-    background: cyan;
+    border: 3.5px solid black;
+    background: white;
     position: relative;
-    animation: spaceship-ring 8s ease-in-out infinite;
-}
-
-@keyframes spaceship-ring {
-    0% {
-        border: 3.5px solid fuchsia;
-    }
-
-    25% {
-        border: 3.5px solid purple;
-    }
-
-    53% {
-        border: 3.5px solid fuchsia;
-    }
-
-    75% {
-        border: 3.5px solid purple;
-    }
-
-    100% {
-        border: 3.5px solid fuchsia;
-    }
 }
 
 /* SPACESHIP CABIN */
 .cabin {
     width: 178px;
     height: 71px;
-    background: cyan;
+    border-radius: 53% 53% 17% 17% / 71% 71% 44% 44%;
+    background: white;
     position: relative;
+    border: 3.5px solid black;
     top: -30px;
     z-index: -2;
     margin: 0 auto;
-    border-radius: 50%;
     left: 4px;
 }
 
 /* SPACESHIP CABIN ANIMATED TEXT */
 .cabin::before {
     position: relative;
-    color: gold;
-    top: 3px;
+    color: cyan;
+    top: 1.7px;
     font-size: 18px;
     font-weight: 800;
     content: "CT";
@@ -116,40 +94,49 @@
         content: "";
     }
 
-    10% {
-        content: "WELCOME!";
+    8% {
+        content: "WELCOME";
+        text-shadow: .8px .8px .8px black;
     }
 
-    20% {
+    26% {
         content: "I like coding";
+        text-shadow: .8px .8px .8px black;
     }
 
-    30% {
+    35% {
         content: "HTML";
+        text-shadow: .8px .8px .8px black;
     }
 
-    40% {
+    44% {
         content: "CSS";
+        text-shadow: .8px .8px .8px black;
     }
 
-    50% {
-        content: "JavaScript";
-    }
-
-    60% {
+    53% {
         content: "SVG";
+        text-shadow: .8px .8px .8px black;
     }
 
-    70% {
+    62% {
+        content: "JavaScript";
+        text-shadow: .8px .8px .8px black;
+    }
+
+    71% {
         content: "jQuery";
+        text-shadow: .8px .8px .8px black;
     }
 
     80% {
         content: "React";
+        text-shadow: .8px .8px .8px black;
     }
 
     90% {
-        content: "NPM & GIT";
+        content: "Npm & Git";
+        text-shadow: .8px .8px .8px black;
     }
 
     100% {
@@ -173,6 +160,7 @@ ul.circles li {
     height: 8px;
     position: absolute;
     background: cyan;
+    border: 1.7px solid black;
     border-radius: 50%;
     animation: spaceship-circles 8s ease-in-out infinite;
 }
@@ -208,7 +196,7 @@ ul.circles li:nth-child(5) {
     }
 
     25% {
-        background: red;
+        background: cyan;
     }
 
     53% {
@@ -216,7 +204,7 @@ ul.circles li:nth-child(5) {
     }
 
     75% {
-        background: red;
+        background: cyan;
     }
 
     100% {
@@ -229,7 +217,8 @@ ul.circles li:nth-child(5) {
     width: 148px;
     height: 17px;
     margin: 0 auto;
-    background: gold;
+    background: cyan;
+    border: 1.7px solid black;
     position: relative;
     left: 3px;
     border-radius: 50%;
