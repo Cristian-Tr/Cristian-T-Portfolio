@@ -156,59 +156,120 @@ ul.circles {
 
 ul.circles li {
     list-style-type: none;
-    width: 21px;
+    width: 17px;
     height: 8px;
     position: absolute;
     background: cyan;
     border: 1.7px solid black;
     border-radius: 50%;
-    animation: spaceship-circles 8s ease-in-out infinite;
 }
 
 ul.circles li:nth-child(1) {
-    left: 28px;
-    bottom: 12px;
+    left: 21px;
+    bottom: 15px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
 }
 
 ul.circles li:nth-child(2) {
-    left: 70px;
-    top: 7.3px;
+    left: 44px;
+    top: 11px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
 }
 
 ul.circles li:nth-child(3) {
-    left: 118px;
-    top: 5px;
+    left: 73px;
+    top: 6px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
 }
 
 ul.circles li:nth-child(4) {
-    right: 62px;
-    top: 7.3px;
+    right: 131px;
+    top: 4px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
 }
 
 ul.circles li:nth-child(5) {
-    right: 22px;
-    bottom: 12px;
+    right: 100px;
+    top: 4px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
+    animation-delay: .8s;
 }
 
-@keyframes spaceship-circles {
+ul.circles li:nth-child(6) {
+    right: 70px;
+    top: 6px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+ul.circles li:nth-child(7) {
+    right: 41px;
+    top: 11px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1.2s;
+}
+
+ul.circles li:nth-child(8) {
+    right: 17px;
+    top: 19px;
+    animation: colors 8s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1.4s;
+}
+
+@keyframes colors {
     0% {
-        background: gold;
+        background: red;
     }
 
-    25% {
-        background: cyan;
+    10% {
+        background: orange;
     }
 
-    53% {
-        background: gold;
+    20% {
+        background: yellow;
     }
 
-    75% {
+    30% {
+        background: green;
+    }
+
+    40% {
+        background: blue;
+    }
+
+    50% {
+        background: springgreen;
+    }
+
+    60% {
+        background: violet;
+    }
+
+    70% {
+        background: purple;
+    }
+
+    80% {
+        background: pink;
+    }
+
+    90% {
         background: cyan;
     }
 
     100% {
-        background: gold;
+        background: marine;
     }
 }
 

@@ -305,3 +305,69 @@ strong {
 	color: white;
 	text-shadow: 1.8px 1.8px 1.8px blue;
 }
+
+#light-1 {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 8px;
+	border: 1.7px solid black;
+	animation: blinking-light1 1.7s ease-in-out infinite;
+}
+
+
+@keyframes blinking-light1 {
+    0% {
+        background: transparent;
+    }
+
+	52.1% {
+        background: transparent;
+    }
+
+    53% {
+        background: springgreen;
+    }
+
+    99.8% {
+        background: springgreen;
+    }
+
+    100% {
+        background: transparent;
+    }
+}
+
+#light-2 {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 8px;
+	border: 1.7px solid black;
+	animation: blinking-light2 1.7s ease-in-out infinite;
+}
+
+
+@keyframes blinking-light2 {
+    0% {
+        background: magenta;
+    }
+
+	52.1% {
+        background: magenta;
+    }
+
+    53% {
+        background: transparent;
+    }
+
+    99.8% {
+        background: transparent;
+    }
+
+    100% {
+        background: magenta;
+    }
+}
