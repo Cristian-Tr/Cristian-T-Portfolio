@@ -135,6 +135,7 @@ h5 {
 	margin: auto;
 	margin-top: 1px;
 	border: 3.5px solid black;
+	z-index: 8;
 	/*box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
   transition: box-shadow 0.5s;*/
 	animation: float 12s ease-in-out infinite;
@@ -318,25 +319,25 @@ strong {
 
 
 @keyframes blinking-light1 {
-    0% {
-        background: transparent;
-    }
+	0% {
+		background: transparent;
+	}
 
 	52.1% {
-        background: transparent;
-    }
+		background: transparent;
+	}
 
-    53% {
-        background: springgreen;
-    }
+	53% {
+		background: springgreen;
+	}
 
-    99.8% {
-        background: springgreen;
-    }
+	99.8% {
+		background: springgreen;
+	}
 
-    100% {
-        background: transparent;
-    }
+	100% {
+		background: transparent;
+	}
 }
 
 #light-2 {
@@ -351,23 +352,23 @@ strong {
 
 
 @keyframes blinking-light2 {
-    0% {
-        background: magenta;
-    }
+	0% {
+		background: magenta;
+	}
 
 	52.1% {
-        background: magenta;
-    }
+		background: magenta;
+	}
 
-    53% {
-        background: transparent;
-    }
+	53% {
+		background: transparent;
+	}
 
-    99.8% {
-        background: transparent;
-    }
+	99.8% {
+		background: transparent;
+	}
 
-    100% {
-        background: magenta;
-    }
+	100% {
+		background: magenta;
+	}
 }
