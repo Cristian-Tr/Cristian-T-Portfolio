@@ -59,10 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const phrases = [
     'Digital technologies',
-    'Frontend Development',
+    'Frontend development',
     'Software implementation',
     'Email marketing',
-    'Explore my portfolio!',
+    'Cookie management',
+    'Data analytics',
+    'Explore my portfolio!'
   ]
 
   const el = document.querySelector('.scrambleText')

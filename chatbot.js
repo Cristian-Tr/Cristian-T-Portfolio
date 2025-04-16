@@ -115,9 +115,6 @@ document.addEventListener('DOMContentLoaded', function () {
     [/mailul/i,
       ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
 
-      [/mail/i,
-        ["Daca doresti sa il contactezi pe Cristian te rog cauta-l pe Linkedin!"]],
-  
     [/adress/i,
       ["You can find Cristian on Linkedin!"]],
 
@@ -241,6 +238,9 @@ document.addEventListener('DOMContentLoaded', function () {
     [/can you/i,
       ["I can give you just some answers!"]],
 
+    [/can you/i,
+      ["I can give you just some answers!"]],
+
     [/prost/i,
       ["Eu sunt doar un software!"]],
 
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ["Please consult the wheater apps"]],
 
     [/(.*)/i,
-      ["Imi cer scuze! Nu inteleg!<br>Sorry! I don`t understand!"]],
+      ["Nu inteleg!<br>I don`t understand!"]],
 
 
 
