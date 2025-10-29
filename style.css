@@ -376,23 +376,19 @@ strong {
 
 
 #buttonLinks {
-  background-color: cyan;
-  color: white;
-  width: 278px;
-  height: 35px;
-  font-size: 17px;
-  font-weight: 800;
-  text-align: center;
-  border: 3.5px solid black;
-  border-radius: 17px;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
-    inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
-    inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  margin: 8px auto;
-}
-
-#buttonLinks {
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 1), inset 0 0.1em 0.3em rgba(0, 0, 0, 0.5),
-    inset 0 -0.1em 0.3em rgba(0, 0, 0, 0.5);
+	background-color: cyan;
+	color: white;
+	text-shadow: .8px .8 px .8px black;
+	width: 215px;
+	height: 35px;
+	font-size: 17px;
+	font-weight: 800;
+	text-align: center;
+	border-radius: 17px;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+		inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+		inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	margin: 8px auto;
+	text-decoration: none;
 }
