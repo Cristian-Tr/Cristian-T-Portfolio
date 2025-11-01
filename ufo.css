@@ -1,18 +1,18 @@
 /* SPACESHIP MOVEMENT */
-.spaceship-wrap {
+.ufo-wrap {
     display: table;
     height: 100%;
     width: 100%;
     margin-top: 88px;
 }
 
-.spaceship-inner {
+.ufo-inner {
     position: relative;
     margin: auto;
-    animation: spaceship-flight 35s ease-in-out infinite;
+    animation: ufo-flight 35s ease-in-out infinite;
 }
 
-@keyframes spaceship-flight {
+@keyframes ufo-flight {
     0% {
         transform: translate(0, 39px) scale(0) rotate(-4deg);
     }
@@ -51,7 +51,7 @@
 }
 
 /* SPACESHIP SHAPE */
-#spaceship-ring {
+#ufo-ring {
     width: 258px;
     height: 48px;
     top: 28px;
