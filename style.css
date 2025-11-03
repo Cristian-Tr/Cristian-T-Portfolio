@@ -98,8 +98,7 @@ h3 {
 	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
 	color: white;
 	text-shadow: 3.5px 1.7px 1px blue;
-	margin-top: 1px;
-	margin-bottom: 1px;
+	margin-top: 8px;
 	text-align: center;
 }
 
@@ -182,50 +181,95 @@ h5 {
 /* GREEN ESCAPADE APP */
 .thumbnail .window1 {
 	display: block;
-	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-top: 17px;
+	margin-bottom: 17px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 98px;
 	height: 98px;
 	border-radius: 50%;
-	border: 10px solid springgreen;
+	border: 3.5px solid black;
 	background-image: url(./green-escapade.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-/* NOBILIO DELICATE APP */
+/* GOOGLE APP SCRIPT */
 .thumbnail .window2 {
 	display: block;
-	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-top: 17px;
+	margin-bottom: 17px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 98px;
 	height: 98px;
 	border-radius: 50%;
-	border: 10px solid magenta;
+	border: 3.5px solid black;
+	background-image: url(./appscript.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* NOBILIO DELICATE APP */
+.thumbnail .window3 {
+	display: block;
+	margin-top: 17px;
+	margin-bottom: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	border: 3.5px solid black;
 	background-image: url(./nobilio.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-/* VIDEO SETTINGS */
-.thumbnail img {
+/* NOBILIO DELICATE APP */
+.thumbnail .sheets {
 	display: block;
-	margin-top: 18px;
+	margin-top: 21px;
+	margin-bottom: 28px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 98%;
-	height: 98px;
+	width: 71%;
+	height: 107px;
+	
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: sheets-slides 5.3s ease-in-out infinite;
 }
+
+
+@keyframes sheets-slides {
+	0% {
+		background-image: url(./spreadsheet.png);
+	}
+
+	50.3% {
+		background-image: url(./spreadsheet.png);
+	}
+
+	50.4% {
+		background-image: url(./slides.png);
+	}
+
+	100% {
+		background-image: url(./slides.png);
+	}
+}
+/* VIDEO SETTINGS */
+
 
 video {
 	display: block;
-	margin-top: 17px;
+	margin-top: 21px;
+	margin-bottom: 3px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 71%;
@@ -237,7 +281,7 @@ video {
 .thumbnail:after {
 	content: "";
 	position: absolute;
-	left: 50%;
+	left: 49.8%;
 	transform: translateX(-50%);
 }
 
@@ -314,25 +358,21 @@ strong {
 	margin: auto;
 	margin-bottom: 8px;
 	border: 1.7px solid black;
-	animation: blinking-light1 1.7s ease-in-out infinite;
+	animation: blinking-light1 2.7s ease-in-out infinite;
 }
 
 
 @keyframes blinking-light1 {
 	0% {
-		background: transparent;
-	}
-
-	52.1% {
-		background: transparent;
-	}
-
-	53% {
 		background: springgreen;
 	}
 
-	99.8% {
+	33.1% {
 		background: springgreen;
+	}
+
+	33.2% {
+		background: transparent;
 	}
 
 	100% {
@@ -347,31 +387,69 @@ strong {
 	margin: auto;
 	margin-bottom: 8px;
 	border: 1.7px solid black;
-	animation: blinking-light2 1.7s ease-in-out infinite;
+	animation: blinking-light2 2.7s ease-in-out infinite;
 }
 
 
 @keyframes blinking-light2 {
 	0% {
-		background: magenta;
-	}
-
-	52.1% {
-		background: magenta;
-	}
-
-	53% {
 		background: transparent;
 	}
 
-	99.8% {
+	33.1% {
+		background: transparent;
+	}
+
+	33.2% {
+		background: cyan;
+	}
+
+	66% {
+		background: cyan;
+	}
+
+	66.1% {
 		background: transparent;
 	}
 
 	100% {
-		background: magenta;
+		background: transparent;
 	}
 }
+
+#light-3 {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 8px;
+	border: 1.7px solid black;
+	animation: blinking-light3 2.7s ease-in-out infinite;
+}
+
+
+@keyframes blinking-light3 {
+	0% {
+		background: transparent;
+	}
+
+	66% {
+		background: transparent;
+	}
+
+	66.5% {
+		background: magenta;
+	}
+
+	99.8% {
+		background: magenta;
+	}
+
+	100% {
+		background: transparent;
+	}
+}
+
 
 #buttonLinks {
 	background-color: cyan;
