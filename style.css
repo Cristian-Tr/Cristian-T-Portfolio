@@ -182,7 +182,7 @@ h5 {
 .thumbnail .window1 {
 	display: block;
 	margin-top: 17px;
-	margin-bottom: 17px;
+	margin-bottom: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 98px;
@@ -195,28 +195,11 @@ h5 {
 	background-position: center;
 }
 
-/* GOOGLE APP SCRIPT */
+/* NOBILIO DELICATE APP */
 .thumbnail .window2 {
 	display: block;
 	margin-top: 17px;
-	margin-bottom: 17px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 98px;
-	height: 98px;
-	border-radius: 50%;
-	border: 3.5px solid black;
-	background-image: url(./appscript.png);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-/* NOBILIO DELICATE APP */
-.thumbnail .window3 {
-	display: block;
-	margin-top: 17px;
-	margin-bottom: 17px;
+	margin-bottom: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 98px;
@@ -228,43 +211,6 @@ h5 {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
-/* NOBILIO DELICATE APP */
-.thumbnail .sheets {
-	display: block;
-	margin-top: 21px;
-	margin-bottom: 28px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 71%;
-	height: 107px;
-	
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	animation: sheets-slides 5.3s ease-in-out infinite;
-}
-
-
-@keyframes sheets-slides {
-	0% {
-		background-image: url(./spreadsheet.png);
-	}
-
-	50.3% {
-		background-image: url(./spreadsheet.png);
-	}
-
-	50.4% {
-		background-image: url(./slides.png);
-	}
-
-	100% {
-		background-image: url(./slides.png);
-	}
-}
-/* VIDEO SETTINGS */
-
 
 video {
 	display: block;
@@ -367,11 +313,11 @@ strong {
 		background: springgreen;
 	}
 
-	33.1% {
+	50% {
 		background: springgreen;
 	}
 
-	33.2% {
+	50.3% {
 		background: transparent;
 	}
 
@@ -379,6 +325,7 @@ strong {
 		background: transparent;
 	}
 }
+
 
 #light-2 {
 	width: 8px;
@@ -396,48 +343,11 @@ strong {
 		background: transparent;
 	}
 
-	33.1% {
+	50.3% {
 		background: transparent;
 	}
 
-	33.2% {
-		background: cyan;
-	}
-
-	66% {
-		background: cyan;
-	}
-
-	66.1% {
-		background: transparent;
-	}
-
-	100% {
-		background: transparent;
-	}
-}
-
-#light-3 {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	margin: auto;
-	margin-bottom: 8px;
-	border: 1.7px solid black;
-	animation: blinking-light3 2.7s ease-in-out infinite;
-}
-
-
-@keyframes blinking-light3 {
-	0% {
-		background: transparent;
-	}
-
-	66% {
-		background: transparent;
-	}
-
-	66.5% {
+	50.5% {
 		background: magenta;
 	}
 
