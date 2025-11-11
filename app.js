@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     'Email marketing',
     'Cookie management',
     'Data analytics',
-    'IT support',
+    'Technical support',
     'Explore my portfolio!'
   ]
 
