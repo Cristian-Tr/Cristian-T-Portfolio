@@ -379,3 +379,29 @@ strong {
 	margin: 8px auto;
 	text-decoration: none;
 }
+
+#balloon {
+	animation: balloon-float 17s ease-in-out infinite;
+}
+
+@keyframes balloon-float {
+	0% {
+		transform: translate(0, 17px) scale(1) rotate(-4deg);
+	}
+
+	26% {
+		transform: translate(0, -30px) scale(1) rotate(4deg);
+	}
+
+	53% {
+		transform: translate(0, 1px) scale(1) rotate(-4deg);
+	}
+
+	71% {
+		transform: translate(0, -20px) scale(1) rotate(4deg);
+	}
+
+	100% {
+		transform: translate(0, 17px) scale(1) rotate(-4deg);
+	}
+}
