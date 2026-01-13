@@ -137,60 +137,32 @@
     <!-- FOOTER -->
     <div class="row" class="container-fluid text-center">
 
-      <!-- CT CHATBOT - START -->
-      <div class="assistent">
 
-        <div class="chat-bar-collapsible" style="margin: auto;">
-
-          <button id="chat-button" type="button" class="collapsible" class="text-center">
-            <div class="head">
-              <div class="head-bg"></div>
-              <div class="eye-l">
-                <div class="iris"></div>
-              </div>
-              <div class="eye-r">
-                <div class="iris"></div>
-              </div>
-              <div class="mouth"></div>
-            </div>
-
-            <div class="animated-text">
-              <h4><span class="animated hearts">I`m CT robot 👆 Click to chat!</span></h4>
-            </div>
-          </button>
-
-          <div class="content">
-            <div class="full-chat-block">
-
-              <div class="outer-container">
-                <div class="chat-container">
-
-                  <div id="conversationPage">
-                    <h5 id="conversationStartTime"></h5>
-                    <p id="startMessage" class="myAssistentText"></p>
-                  </div>
-
-                  <div id="userInput">
-                    <input id="textInput" class="input-box" type="text" name="msg"
-                      style="font-size: 17px; color: cyan; text-shadow: .3px .8px 1px black;"
-                      placeholder="✍️ Type a message & Enter">
-                    <p></p>
-                  </div>
-
-                  <div id="chat-bar-bottom">
-                    <p></p>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
+  <!-- CT CHATBOT - START -->
+ <div id="chat-widget">
+    <div id="chat-trigger" onclick="toggleChat()">
+        <div class="head">
+            <div class="head-bg"></div>
+            <div class="eye-l"><div class="iris"></div></div>
+            <div class="eye-r"><div class="iris"></div></div>
+            <div class="mouth"></div>
         </div>
-      </div>
+        <div id="heart-container">I'm CT robot 👆 Click to chat!</div>
     </div>
-    <!-- CT CHATBOT - STOP -->
+
+    <div id="chat-window">
+        <div class="minimize-btn" onclick="toggleChat()" style="font-size: large;">🔽</div>
+        <div id="display">
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Scrie ceva...">
+            <button id="sendBtn" onclick="handleChat()">Ok</button>
+        </div>
+    </div>
+</div>
+   <!-- CT CHATBOT - STOP -->
+
+
 
   </div>
   <!-- BOOTSTRAP INITIALIZATION - STOP -->
