@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Informații Profesionale
         "proiecte": "Am dezvoltat proiecte HTML, CSS, SVG, JavaScript la BRAT!",
         "ecommerce": "Vizitează aplicația Green Escapade!",
-        "autism": "Vizitează aplicația Authism Robo Therapy!",
-        "authism": "Vizitează aplicația Authism Robo Therapy!",
+        "robotherapy": "Vizitează aplicația RoboTherapy!",
+        "robo terapie": "Vizitează aplicația RoboTherapy!",
+        "roboterapie": "Vizitează aplicația RoboTherapy!",
         "vanzari": "Am experiență în vânzări la companii multinaționale!",
         "vânzări": "Am experiență în vânzări la companii multinaționale!",
         "marketing": "Vizitează aplicația Nobilio!",
