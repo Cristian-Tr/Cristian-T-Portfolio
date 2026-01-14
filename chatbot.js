@@ -46,9 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         "angajare": "Sunt deschis la noi oportunități!",
         "remote": "Da dar sunt deschis și la variante hibrid sau la sediu.",
 
-        // Fun / Personalitate
-        "cine esti": "Sunt robotul acestui portofoliu! 😉",
-        "robot": "Sunt un robot portocaliu și simpatic! 😉"
     };
 
     // 2. Funcție pentru Salut Dinamic (în funcție de oră)
