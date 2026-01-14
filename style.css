@@ -206,6 +206,23 @@ h5 {
 	height: 98px;
 	border-radius: 50%;
 	border: 3.5px solid black;
+	background-image: url(./robohead.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* AUTHISM ROBO THERAPY APP */
+.thumbnail .window3 {
+	display: block;
+	margin-top: 17px;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	border: 3.5px solid black;
 	background-image: url(./nobilio.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -310,14 +327,18 @@ strong {
 
 @keyframes blinking-light1 {
 	0% {
+		background: transparent;
+	}
+
+	0.3% {
 		background: springgreen;
 	}
 
-	50% {
+	35% {
 		background: springgreen;
 	}
 
-	50.3% {
+	35.3% {
 		background: transparent;
 	}
 
@@ -343,16 +364,53 @@ strong {
 		background: transparent;
 	}
 
-	50.3% {
+	35% {
 		background: transparent;
 	}
 
-	50.5% {
-		background: magenta;
+	35.3% {
+		background: dodgerblue;
+	}
+
+	70% {
+		background: dodgerblue;
+	}
+
+	70.3% {
+		background: transparent;
+	}
+
+	100% {
+		background: transparent;
+	}
+}
+
+#light-3 {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: auto;
+	margin-bottom: 8px;
+	border: 1.7px solid black;
+	animation: blinking-light3 2.7s ease-in-out infinite;
+}
+
+
+@keyframes blinking-light3 {
+	0% {
+		background: transparent;
+	}
+
+	70% {
+		background: transparent;
+	}
+
+	70.3% {
+		background: springgreen;
 	}
 
 	99.8% {
-		background: magenta;
+		background: springgreen;
 	}
 
 	100% {
