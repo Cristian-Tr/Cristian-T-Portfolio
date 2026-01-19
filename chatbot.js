@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
+    
     const display = document.getElementById('display');
     const input = document.getElementById('userInput');
     const trigger = document.getElementById('chat-trigger');
@@ -121,21 +123,40 @@ document.addEventListener('DOMContentLoaded', function () {
             iris.style.transform = `translate(-${x}, -${y})`;
         });
     });
+// ANIMATED HEARTS - START
+  function initparticles() {
+    animatedHearts();
 
-    // 8. Inimioare Robot (Generare automată)
-    const heartContainer = document.getElementById('heart-container');
-    if (heartContainer) {
-        for (let i = 0; i < 6; i++) {
-            let p = document.createElement('div');
-            p.className = 'particle';
-            p.style.left = Math.random() * 90 + '%';
-            p.style.animationDelay = (Math.random() * 3) + 's';
-            heartContainer.appendChild(p);
-        }
-    }
+  }
 
     // 9. Suport pentru tasta Enter
     input.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') window.handleChat();
     });
+
+
+
+    
+  // SET HEARTS SIZE & NUMBER
+  function animatedHearts() {
+    $.each($(".animated.hearts"), function () {
+      var heartcount = ($(this).width() / 71) * 4;
+      for (var i = 0; i <= heartcount; i++) {
+        var size = ($.rnd(53, 125) / 10);
+        $(this).append('<span class="particle" style="top:' + $.rnd(17, 80) + '%; left:' + $.rnd(0, 95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0, 30) / 10) + 's;"></span>');
+      }
+    });
+  }
+  // CALCULATE RANDOM VALUE
+  jQuery.rnd = function (m, n) {
+    m = parseInt(m);
+    n = parseInt(n);
+    return Math.floor(Math.random() * (n - m + 1)) + m;
+  }
+
+  initparticles();
+  //ANIMATED HEARTS - END
+
+    
+
 });
