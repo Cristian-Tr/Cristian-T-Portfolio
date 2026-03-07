@@ -60,12 +60,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const phrases = [
     'Digital technologies',
     'Frontend development',
-    'Apps Script automation',
     'Software implementation',
     'Email marketing',
-    'Cookie management',
     'Data analytics',
     'Technical support',
+    'B2B sales',
     'Explore my portfolio!'
   ]
 
