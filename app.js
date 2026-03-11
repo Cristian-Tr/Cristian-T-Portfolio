@@ -58,14 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // MY ACTIVITIES - TEXTS
 
   const phrases = [
-    'Digital technologies',
-    'Frontend development',
-    'Software implementation',
+    'Operational support',
     'Email marketing',
-    'Data analytics',
-    'Technical support',
-    'B2B sales',
-    'Explore my portfolio!'
+    'Data analytics'
   ]
 
   const el = document.querySelector('.scrambleText')

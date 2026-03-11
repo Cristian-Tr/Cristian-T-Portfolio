@@ -3,7 +3,7 @@
     display: table;
     height: 100%;
     width: 100%;
-    margin-top: 88px;
+    margin-top: 53px;
 }
 
 .ufo-inner {
@@ -100,37 +100,37 @@
     }
 
     26% {
-        content: "I like coding";
-        text-shadow: .8px .8px .8px black;
-    }
-
-    35% {
         content: "HTML";
         text-shadow: .8px .8px .8px black;
     }
 
-    44% {
+    35% {
         content: "CSS";
         text-shadow: .8px .8px .8px black;
     }
 
-    53% {
-        content: "SVG";
-        text-shadow: .8px .8px .8px black;
-    }
-
-    62% {
+    44% {
         content: "JavaScript";
         text-shadow: .8px .8px .8px black;
     }
 
+    53% {
+        content: "MS Office";
+        text-shadow: .8px .8px .8px black;
+    }
+
+    62% {
+        content: "G Suite";
+        text-shadow: .8px .8px .8px black;
+    }
+
     71% {
-        content: "Apps Script";
+        content: "Training";
         text-shadow: .8px .8px .8px black;
     }
 
     80% {
-        content: "I like coding";
+        content: "Coaching";
         text-shadow: .8px .8px .8px black;
     }
 
