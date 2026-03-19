@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // MY ACTIVITIES - TEXTS
 
   const phrases = [
-    'Operational support',
+    'Technical support',
     'Email marketing',
     'Data analytics'
   ]
