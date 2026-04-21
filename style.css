@@ -39,7 +39,7 @@ main {
 	color: white;
 	margin-top: -27px;
 	padding: 1px;
-	font-family: Montserrat, sans-serif;
+	font-family: "Arial Narrow", 'Segoe UI', "Times New Roman";
 }
 
 @keyframes rotation {
@@ -57,7 +57,7 @@ main {
 	margin: 8px auto;
 	margin-top: 53px;
 	background-color: rgb(230, 221, 221);
-	background-image: url(./my-picture.jpg);
+	background-image: url(./my-photo.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -76,7 +76,7 @@ main {
 	text-align: center;
 	margin-top: 1px;
 	font-weight: 900;
-	font-family: "Lato", "Montserrat", "Times New Roman";
+	font-family: "Lato", "Arial Narrow", 'Segoe UI', "Times New Roman";
 	color: cyan;
 	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
 		0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 255, 0.1), 0 0 5px rgba(0, 0, 255, 0.1),
@@ -88,7 +88,7 @@ main {
 h2 {
 	text-align: center;
 	font-weight: 300;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
+	font-family: "Arial Narrow", 'Segoe UI', "Times New Roman";
 	color: cyan;
 	text-shadow: .8px .8px 1px black;
 }
@@ -112,7 +112,7 @@ h2 {
 /* PORTFOLIO  */
 h3 {
 	font-weight: 400;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
+	font-family: "Arial Narrow", 'Segoe UI', "Times New Roman";
 	color: cyan;
 	text-shadow: .8px .8px 1px black;
 	margin-top: 8px;
@@ -123,13 +123,13 @@ h4 {
 	color: cyan;
 	font-weight: 100;
 	margin-top: 1px;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
+	font-family: "Arial Narrow", 'Segoe UI', "Times New Roman";
 }
 
 h5 {
 	font-weight: 100;
 	margin-top: 3px;
-	font-family: "Arial Narrow", 'Segoe UI', "Lato", "Montserrat", "sans serif";
+	font-family: "Arial Narrow", 'Segoe UI', "Times New Roman";;
 }
 
 @media (min-width: 768px) {
@@ -153,7 +153,7 @@ h5 {
 	z-index: 8;
 	/*box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
   transition: box-shadow 0.5s;*/
-	animation: float 12s ease-in-out infinite;
+	animation: float 17s ease-in-out infinite;
 }
 
 @media (min-width: 1700px) {
@@ -239,7 +239,7 @@ h5 {
 	height: 98px;
 	border-radius: 50%;
 	border: 3.5px solid black;
-	background-image: url(./shakies-berries-symbol.png);
+	background-image: url(./dairies-berries-symbol.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
