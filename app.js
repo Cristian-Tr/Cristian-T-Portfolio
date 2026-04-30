@@ -81,26 +81,4 @@ document.addEventListener('DOMContentLoaded', function () {
   next()
 
 
-  // TWINKLE RANDOM COLORED STARS ANIMATION
-  const starsAnimation = document.getElementById("stars");
-
-  let stars = ["✶", "✷"];
-
-  for (let i = 0; i < 200; i++) {
-    const element = document.createElement("div");
-    starsColor = 'rgb(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ')';
-    element.style.color = starsColor;
-    element.style.top = `${Math.random() * 100}%`;
-    element.style.left = `${Math.random() * 100}%`;
-    let sizeX = Math.random() * 8 + 1;
-    element.innerHTML = stars[~~(Math.random() * stars.length)];
-    element.style.fontSize = sizeX + "px";
-    starsAnimation.appendChild(element);
-    element.style.animation = `${8000 / sizeX + Math.random() * (8000 / sizeX)
-      }ms linear ${Math.random() * 8000}ms alternate infinite stars-twinkle`;
-    element.setAttribute("class", "star");
-  }
-
-
-
 });
