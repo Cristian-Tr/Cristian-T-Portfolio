@@ -1,7 +1,9 @@
 🚀 Cristian T Portfolio - Landin Page
 
 📈 Rezultate Audit Lighthouse
+
 🖥️ DESKTOP: Performance: 44 | Accesibility: 94 | Best practices: 100 | SEO: 100
+
 📱 MOBILE:  Performance: 40 | Accesibility: 94 | Best practices: 100 | SEO: 100
 
 🛠️ Tehnologii Utilizate
