@@ -15,8 +15,6 @@
   <meta property="og:type" content="profile">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" defer></script>
-  <script src="app.js" defer></script>
   <script type="application/ld+json" defer>
     {
       "@context": "https://schema.org",
@@ -62,7 +60,7 @@
               <h4 style='color: springgreen; text-shadow: .8px .8px .8px black;'>Web Promotion</h4><br>
               <video poster="./green-escapade-poster.png" autoplay muted loop playsinline preload="auto"
                 style="width: 80%; border-radius: 8px; display: block; margin: 0 auto;">
-                <source src="./green-escapade-video.mp4" type="video/mp4">
+                <source src="./video-green-escapade.mp4" type="video/mp4">
                 <track src="./caption-green-escapade-ro.vtt" kind="captions" srclang="ro" label="Română" default>
                 <p>Browserul tău nu suportă elementul video.</p>
               </video><br>
@@ -83,7 +81,7 @@
               <h4 style='color: cyan; text-shadow: .8px .8px .8px black;'>eCommerce Chatbot</h4><br>
               <video poster="./chatbot-consultant-poster.png" autoplay muted loop playsinline preload="auto"
                 style="width: 80%; border-radius: 8px; display: block; margin: 0 auto;">
-                <source src="./chatbot-consultant-video.mp4" type="video/mp4">
+                <source src="./video-chatbot-consultant.mp4" type="video/mp4">
                 <track src="./caption-chatbot-consultant-ro.vtt" kind="captions" srclang="ro" label="Română" default>
                 <p>Browserul tău nu suportă elementul video.</p>
               </video><br>
@@ -104,7 +102,7 @@
               <h4 style='color: magenta; text-shadow: .8px .8px .8px black;'>Digital Marketing</h4><br>
               <video poster="./dairies-berries-poster.png" autoplay muted loop playsinline preload="auto"
                 style="width: 80%; border-radius: 8px; display: block; margin: 0 auto;">
-                <source src="./dairies-berries-video.mp4" type="video/mp4">
+                <source src="./video-dairies-berries.mp4" type="video/mp4">
                 <track src="./caption-daries-berries-ro.vtt" kind="captions" srclang="ro" label="Română" default>
                 <p>Browserul tău nu suportă elementul video.</p>
               </video><br>
@@ -159,8 +157,91 @@
       <!-- MY LINKEDIN ACCOUNT LINK & CTA SVG TEXT - END-->
     </footer>
 
-    <!-- BOOTSTRAP INITIALIZATION - STOP -->
+    <script>
+// MY ACTIVITIES - SCRAMBLE TEXT
+  class TextScramble {
+    constructor(el) {
+      this.el = el
+      this.chars = '!<>-_\\/[]{}—=+*^?#________'
+      this.update = this.update.bind(this)
+    }
+    setText(newText) {
+      const oldText = this.el.innerText
+      const length = Math.max(oldText.length, newText.length)
+      const promise = new Promise((resolve) => this.resolve = resolve)
+      this.queue = []
+      for (let i = 0; i < length; i++) {
+        const from = oldText[i] || ''
+        const to = newText[i] || ''
+        const start = Math.floor(Math.random() * 40)
+        const end = start + Math.floor(Math.random() * 35)
+        this.queue.push({ from, to, start, end })
+      }
+      cancelAnimationFrame(this.frameRequest)
+      this.frame = 0
+      this.update()
+      return promise
+    }
+    update() {
+      let output = ''
+      let complete = 0
+      for (let i = 0, n = this.queue.length; i < n; i++) {
+        let { from, to, start, end, char } = this.queue[i]
+        if (this.frame >= end) {
+          complete++
+          output += to
+        } else if (this.frame >= start) {
+          if (!char || Math.random() < 0.28) {
+            char = this.randomChar()
+            this.queue[i].char = char
+          }
+          output += `<span class="chars">${char}</span>`
+        } else {
+          output += from
+        }
+      }
+      this.el.innerHTML = output
+      if (complete === this.queue.length) {
+        this.resolve()
+      } else {
+        this.frameRequest = requestAnimationFrame(this.update)
+        this.frame++
+      }
+    }
+    randomChar() {
+      return this.chars[Math.floor(Math.random() * this.chars.length)]
+    }
+  }
 
+  // MY ACTIVITIES - TEXTS
+
+  const phrases = [
+    'Technical support',
+    'Frontend development',
+    'Training & Coaching',
+    'Cookie management',
+    'Data analytics',
+    'Email marketing'
+  ]
+
+  const el = document.querySelector('.scrambleText')
+  const fx = new TextScramble(el)
+
+
+  let counter = 0
+  const next = () => {
+    fx.setText(phrases[counter]).then(() => {
+      setTimeout(next, 3500)
+    })
+    counter = (counter + 1) % phrases.length
+  }
+
+  next()
+    </script>
+
+    <!-- BOOTSTRAP INITIALIZATION - STOP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  
 </body>
 
 </html>
