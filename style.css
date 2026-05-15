@@ -5,11 +5,20 @@ body {
 	padding: 0px;
 	scroll-behavior: smooth;
 	width: 100%;
+	z-index: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .container-fluid {
 	padding-left: 8px;
+}
+
+.jumbotron,
+section,
+footer {
+	position: relative;
+	z-index: 1;
+	background: transparent !important;
 }
 
 /* --- EFECT FADE IN LA INTRAREA PE SITE --- */
@@ -23,6 +32,48 @@ body {
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+
+#stars {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: -1;
+	overflow: hidden;
+	will-change: opacity, transform;
+	pointer-events: none;
+}
+
+.star {
+	opacity: 0;
+	filter: drop-shadow(0 0 3px currentColor);
+	pointer-events: none;
+	contain: layout style;
+}
+
+@keyframes stars-twinkle {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+}
+
+img {
+	position: relative;
+	z-index: 10;
 }
 
 header,
@@ -147,7 +198,7 @@ h5 {
 	/*box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px white;
   transition: box-shadow 0.5s;*/
 	animation: float 17s ease-in-out infinite;
-}
+}	
 
 @media (min-width: 1700px) {
 	.thumbnail {

@@ -4,9 +4,9 @@ https://cristian-tr.github.io/Cristian-T-Portfolio/
 
 📈 Rezultate Audit Lighthouse
 
-🖥️ DESKTOP: Performance: 83 | Accesibility: 94 | Best practices: 100 | SEO: 100
+🖥️ DESKTOP: Performance: 50 | Accesibility: 94 | Best practices: 100 | SEO: 100
 
-📱 MOBILE:  Performance: 43 | Accesibility: 94 | Best practices: 100 | SEO: 100
+📱 MOBILE:  Performance: 36 | Accesibility: 94 | Best practices: 100 | SEO: 100
 
 🛠️ Tehnologii Utilizate
 HTML5 & CSS3 (Custom styling & Bootstrap 5) 🎨
