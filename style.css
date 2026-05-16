@@ -429,11 +429,11 @@ strong {
 	}
 
 	35.3% {
-		background: cyan;
+		background: royalblue;
 	}
 
 	70% {
-		background: cyan;
+		background: royalblue;
 	}
 
 	70.3% {
@@ -466,11 +466,11 @@ strong {
 	}
 
 	70.3% {
-		background: springgreen;
+		background: #f30005;
 	}
 
 	99.8% {
-		background: springgreen;
+		background: #f30005;
 	}
 
 	100% {
@@ -576,8 +576,8 @@ strong {
 .btn-title {
 	font-size: 1.25rem;
 	font-weight: 800;
-	text-shadow: 1px 1px 1px black;
-	color: cyan;
+	text-shadow: .1px .1px .1px black;
+	color: royalblue;
 	padding-top: 5px;
 }
 
@@ -591,24 +591,24 @@ strong {
 
 @keyframes colorRotation {
 	0% {
-		stroke: black;
+		stroke: cyan;
 		stroke-dashoffset: 1000;
 	}
 
 	35% {
-		stroke: cyan;
+		stroke: royalblue;
 	}
 
 	70% {
-		stroke: cyan;
+		stroke: royalblue;
 	}
 
 	70.1% {
-		stroke: black;
+		stroke: cyan;
 	}
 
 	100% {
-		stroke: black;
+		stroke: cyan;
 		stroke-dashoffset: 0;
 	}
 }
