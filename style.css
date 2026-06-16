@@ -400,12 +400,12 @@ video {
 	}
 
 	80% {
-		transform: scale(1.5);
+		transform: scale(1.25);
 		opacity: 0;
 	}
 
 	100% {
-		transform: scale(1.5);
+		transform: scale(1.25);
 		opacity: 0;
 	}
 }
