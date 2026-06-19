@@ -302,8 +302,8 @@ video {
 
 .animation-container {
 	position: relative;
-	width: 134px;
-	height: 134px;
+	width: 200px;
+	height: 89px;
 	margin: auto;
 	margin-top: 25px;
 	background-color: transparent;
@@ -322,7 +322,7 @@ video {
 	z-index: 2;
 	user-select: none;
 	pointer-events: none;
-	transform-origin: 50% 17%;
+	transform-origin: 53% 17%;
 	animation: handClick 3.5s infinite ease-in-out;
 }
 
@@ -332,8 +332,8 @@ video {
 	/* Ajustare unde pe vârful degetului */
 	left: 50%;
 	transform: translateX(-50%);
-	width: 120px;
-	height: 120px;
+	width: 98px;
+	height: 98px;
 	z-index: 1;
 	pointer-events: none;
 }
