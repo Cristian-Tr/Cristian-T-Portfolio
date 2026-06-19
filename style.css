@@ -318,7 +318,7 @@ video {
 }
 
 .hand-emoji {
-	font-size: 35px;
+	font-size: 28px;
 	z-index: 2;
 	user-select: none;
 	pointer-events: none;
@@ -328,12 +328,12 @@ video {
 
 .radiating-svg {
 	position: absolute;
-	top: -46px;
+	top: -32px;
 	/* Ajustare unde pe vârful degetului */
 	left: 50%;
 	transform: translateX(-50%);
-	width: 98px;
-	height: 98px;
+	width: 88px;
+	height: 88px;
 	z-index: 1;
 	pointer-events: none;
 }
