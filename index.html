@@ -3,212 +3,529 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cristian T Portfolio</title>
-  <meta name="Cristi T Portfolio" content="GitHub Portfolio, HTML, CSS, JavaScript" />
-  <meta name='viewport' content="width=device-width, initial-scale=1">
+  <title>GREEN ESCAPADE</title>
+  <meta name="Green Escapade" content="Sea cruises" />
+  <meta name="description" content="eCommerce Landing page, Green Escapade">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Cristian T Portfolio - Landing Page">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" href="./website-pictogram.webp" type="image/webp">
-  <link rel="canonical" href="https://cristian-tr.github.io/Cristian-T-Portfolio/">
-  <meta property="og:title" content="Cristian T Portfolio">
-  <meta property="og:description" content="Cristian T Portfolio - Landing Page">
+  <meta property="og:title" content="Green Escapade">
+  <meta property="og:description" content="Green Escapade - promo Landing Page">
   <meta property="og:type" content="profile">
-  <meta property="og:url" content="https://cristian-tr.github.io/Cristian-T-Portfolio/" />
-  <meta property="og:site_name" content="Cristian T Portfolio" />
+  <meta property="og:url" content="https://cristian-tr.github.io/Green-escapade/" />
+  <meta property="og:site_name" content="Green Escapade" />
+  <link rel="canonical" href="https://cristian-tr.github.io/Green-escapade/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preload" as="image" href="./poster-mobile.webp" media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" as="image" href="./poster-desktop.webp" media="(min-width: 768px)" fetchpriority="high">
+  <link rel="preload" href="./mobileVideo.mp4" as="video" type="video/mp4" media="(max-width: 767px)">
+  <link rel="preload" href="./desktopVideo.mp4" as="video" type="video/mp4" media="(min-width: 768px)">
   <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json" defer>
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Cristian Tr",
-      "url": "https://cristian-tr.github.io/Cristian-T-Portfolio/",
+      "jobTitle": "Analist IT", 
+      "url": "https://cristian-tr.github.io/Chatbot-consultant/",
       "sameAs": ["https://github.com/Cristian-Tr/"]
     }
     </script>
 </head>
 
+
 <body>
-  <!-- RANDOM STARS - START -->
-  <div id="stars"></div>
-  <!-- BOOTSTRAP INITIALIZATION - START -->
-  <div class="jumbotron text-center">
-    <!-- HEADER - START -->
-    <header>
-      <div class="container-fluid align-items-center">
-        <!-- MY PICTURE -->
-        <div class="portrait-picture">
-        </div>
-        <h1>CRISTIAN T</h1>
-        <h2>IT ANALYST</h2>
-        <!-- MY ACTIVITIES -->
-        <div class="scrambleContainer">
-          <h3 class="scrambleText"></h3>
-        </div>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <a href="#history">HISTORY</a>
+    <a href="#services">SERVICES</a>
+    <a href="#" style="font-size: 17px; margin-top: -6px;"> <img src="./green-escapade-image.webp" alt="Website pictogram
+            width=" 35px" height="12px"></a>
+    <a href="#reviews">REVIEWS</a>
+    <a href="#tickets">TICKETS</a>
+  </nav>
 
-    </header>
-    <!-- HEADER - STOP -->
+  <header id="myPage" data-spy="scroll">
 
-    <!-- PORTFOLIO START -->
-    <main>
-      <div class="container-fluid px-md-5 text-center">
+    <div id="header" class="container-fluid text-center align-items-center">
+      <section class="row" id="videos">
+        <!-- Start video based on screen size -->
+        <div class="video-boats" style="padding: 0; margin: 0 auto;">
+
+          <!-- Video pentru Mobile - Adăugat fetchpriority pentru LCP -->
+
+          <video id="mobile" autoplay loop muted playsinline poster="poster-mobile.webp" style="width: 100%;"
+            fetchpriority="high">
+            <source src="./mobileVideo.mp4" type="video/mp4" media="(max-width: 767px)">
+            <track src="./captions-ro.vtt" kind="captions" srclang="ro" label="Română" default>
+            <p>Browserul tău nu poate reda video.</p>
+          </video>
+          <!-- Video pentru Desktop -->
+          <video id="desktop" autoplay loop muted playsinline poster="poster-desktop.webp" style="width: 100%;"
+            fetchpriority="high">
+            <source src="./desktopVideo.mp4" type="video/mp4" media="(min-width: 768px)">
+            <track src="./captions-ro.vtt" kind="captions" srclang="ro" label="Română" default>
+            <p>Browserul tău nu poate reda video.</p>
+          </video>
+
+        </div>
+        <!-- Stop video -->
+      </section>
+
+      <div><img src="./boat-on-waves.webp" width="100%" height="100%" id="header-logo" alt="Boat on waves"></div>
+
+      <div id="callToAction">
+        <div class="letters-waves">
+          <h1><span style="--i:1">G</span>
+            <span style="--i:2">R</span>
+            <span style="--i:3">E</span>
+            <span style="--i:4">E</span>
+            <span style="--i:5">N</span>&nbsp;
+            <span style="--i:6">E</span>
+            <span style="--i:7">S</span>
+            <span style="--i:8">C</span>
+            <span style="--i:9">A</span>
+            <span style="--i:10">P</span>
+            <span style="--i:11">A</span>
+            <span style="--i:12">D</span>
+            <span style="--i:13">E</span>
+          </h1>
+        </div>
+        <h2 style="color: springgreen; margin-top: -4px;">USING GREEN ENERGY</h2>
+        <h3>
+          <a href="#bookingForm">BOOK NOW!</a>
+        </h3>
+        <h4 style="color: magenta;">UNFORGETTABLE!</h4><br>
+
+        <!-- MY GITHUB PORTFOLIO LINK - START -->
+        <div class="container">
+          <h4>DEMO LANDING PAGE</h4>
+          <a href="https://cristian-tr.github.io/Cristian-T-Portfolio/" aria-label="Vizitează portofoliul meu GitHub"
+            class="my-link">
+            CRISTIAN T <img src="my-photo.jpg" alt="My picture"
+              style="width: clamp(35px, 8vw, 53px); height: clamp(35px, 8vw, 53px); 
+                                   border-radius: 50%; margin-bottom: 3px; object-fit: cover; border: 1px solid #003388;">
+            PORTFOLIO</a>
+        </div>
+        <!-- MY GITHUB ACCOUNT LINK & CTA TEXT - END -->
+  </header>
+
+  <main>
+    <!-- CAROUSEL -->
+    <article id="slider">
+      <div class="container-fluid text-center bg-white">
         <div class="row">
-
-          <div class="col-12" style="margin-top: 35px; margin-bottom: 8px;">
-          </div>
-
-          <div class="col-sm-4 col-12">
-            <div class="thumbnail"><br>
-              <div class="window1"></div>
-              <h3 style='color: springgreen; text-shadow: .8px .8px .8px black;'>Green Escapade</h3>
-              <h4 style='color: springgreen; text-shadow: .8px .8px .8px black;'>Cruise booking</h4>
-              <video poster="./green-escapade-poster.webp" autoplay muted loop playsinline preload="auto"
-                style="width: 80%; border-radius: 8px; display: block; margin: 0 auto;">
-                <source src="./video-green-escapade.mp4" type="video/mp4">
-                <track src="./caption-green-escapade-ro.vtt" kind="captions" srclang="ro" label="Română" default>
-                <p>Browserul tău nu suportă elementul video.</p>
-              </video>
-
-              <div class="animation-container">
-                <div class="pointer-group">
-                  <!-- SVG CERCURI -->
-                  <svg class="radiating-svg" viewBox="0 0 100 100">
-                    <!-- Primul cerc -->
-                    <circle class="wave-circle wave-1" cx="50" cy="50" r="35" fill="lime" fill-opacity="0.6"
-                      stroke="lime" stroke-width="17" />
-                    <!-- Al doilea cerc -->
-                    <circle class="wave-circle wave-2" cx="50" cy="50" r="35" fill="none" stroke="lime"
-                      stroke-width="8" />
-                  </svg>
-                  <div class="hand-emoji" role="img" aria-label="Click">
-                    👆
-                  </div>
+          <div class="col-12">
+            <div class="carousel-fixed-height"
+              style="position: relative; width: 100%; height: 350px; overflow: hidden;">
+              <div class="promo-carousel">
+                <div class="promo-banner">
+                  <img src="./7.webp" class="promo-image" alt="Carousel image 1">
                 </div>
-                <small style="color: royalblue; text-shadow: .1px .1px .1px black; font-weight: bold;">
-                  GET YOUR CRUISE TICKET!
-                </small>
-              </div>
-              <div id="light-1"></div>
-              <small style="color: springgreen; text-shadow: .1px .1px .1px black;">
-                Lighthouse Audit<br>
-                Performance: 89 | Accesibility: 94<br>
-                Best practices: 100 | SEO: 100
-              </small><br>
-              <a href="https://cristian-tr.github.io/Green-escapade/" target="_blank" aria-label="Link Green Escapade">
-                <span class="span-link"></span>
-              </a><br>
-            </div><br>
-          </div>
-
-          <div class="col-sm-4 col-12">
-            <div class="thumbnail"><br>
-              <div class="window2"></div>
-              <h3 style='color: royalblue; text-shadow: .8px .8px .8px black;'>Chatbot Consultant</h3>
-              <h4 style='color: royalblue; text-shadow: .8px .8px .8px black;'>eCommerce Chatbot</h4>
-              <video poster="./chatbot-consultant-poster.webp" autoplay muted loop playsinline preload="auto"
-                style="width: 80%; border-radius: 8px; display: block; margin: 0 auto;">
-                <source src="./video-chatbot-consultant.mp4" type="video/mp4">
-                <track src="./caption-chatbot-consultant-ro.vtt" kind="captions" srclang="ro" label="Română" default>
-                <p>Browserul tău nu suportă elementul video.</p>
-              </video>
-
-              <div class="animation-container">
-                <div class="pointer-group">
-                  <!-- SVG CERCURI -->
-                  <svg class="radiating-svg" viewBox="0 0 100 100">
-                    <!-- Primul cerc -->
-                    <circle class="wave-circle wave-1" cx="50" cy="50" r="35" fill="royalblue" fill-opacity="0.6"
-                      stroke="royalblue" stroke-width="17" />
-                    <!-- Al doilea cerc -->
-                    <circle class="wave-circle wave-2" cx="50" cy="50" r="35" fill="none" stroke="royalblue"
-                      stroke-width="8" />
-                  </svg>
-                  <div class="hand-emoji" role="img" aria-label="Click">
-                    👆
-                  </div>
+                <div class="promo-banner">
+                  <img src="./8.webp" class="promo-image" alt="Carousel image 2">
                 </div>
-                <small style="color: royalblue; text-shadow: .1px .1px .1px black; font-weight: bold;">
-                  TALK TO MY CHATBOT!
-                </small>
-              </div>
-              <div id="light-2"></div>
-              <small style="color: royalblue; text-shadow: .1px .1px .1px black;">
-                Lighthouse Audit<br>
-                Performance: 98 | Accesibility: 100<br>
-                Best practices: 100 | SEO: 100
-              </small><br>
-              <a href="https://cristian-tr.github.io/Chatbot-consultant/" target="_blank" aria-label="Link Chatbot">
-                <span class="span-link"></span>
-              </a><br>
-            </div><br>
-          </div>
-
-          <div class="col-sm-4 col-12">
-            <div class="thumbnail"><br>
-              <div class="window3"></div>
-              <h3 style='color: #f30005; text-shadow: .8px .8px .8px black;'>Dairies Berries</h3>
-              <h4 style='color: #f30005; text-shadow: .8px .8px .8px black;'>Digital Marketing</h4>
-              <video poster="./dairies-berries-poster.webp" autoplay muted loop playsinline preload="auto"
-                style="width: 80%; border-radius: 8px; display: block; margin: 0 auto;">
-                <source src="./video-dairies-berries.mp4" type="video/mp4">
-                <track src="./caption-daries-berries-ro.vtt" kind="captions" srclang="ro" label="Română" default>
-                <p>Browserul tău nu suportă elementul video.</p>
-              </video>
-
-              <div class="animation-container">
-                <div class="pointer-group">
-                  <!-- SVG CERCURI -->
-                  <svg class="radiating-svg" viewBox="0 0 100 100">
-                    <!-- Primul cerc -->
-                    <circle class="wave-circle wave-1" cx="50" cy="50" r="35" fill="#f30005" fill-opacity="0.6"
-                      stroke="#f30005" stroke-width="17" />
-                    <!-- Al doilea cerc -->
-                    <circle class="wave-circle wave-2" cx="50" cy="50" r="35" fill="none" stroke="#f30005"
-                      stroke-width="8" />
-                  </svg>
-                  <div class="hand-emoji" role="img" aria-label="Click">
-                    👆
-                  </div>
+                <div class="promo-banner">
+                  <img src="./9.webp" class="promo-image" alt="Carousel image 3">
                 </div>
-                <small style="color: #f30005; text-shadow: .1px .1px .1px black; font-weight: bold;">
-                  FIND DAIRY TO YOUR TASTE!
-                </small>
               </div>
-              <div id="light-3"></div>
-              <small style="color: #f30005; text-shadow: .1px .1px .1px black;">
-                Lighthouse Audit<br>
-                Performance: 98 | Accesibility: 100<br>
-                Best practices: 100 | SEO: 100
-              </small><br>
-              <a href="https://cristian-tr.github.io/Email-Newsletter/" target="_blank"
-                aria-label="Link Dairies Berries">
-                <span class="span-link"></span>
-              </a><br>
-            </div><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ABOUT US SECTION -->
+    <div class="container-fluid text-center justify-content-center" id="history">
+      <h2 style="font-weight: 800;">HISTORY</h2><br>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+
+            <img src="old-ferry.webp" width="100%" height="auto" class="img-fluid" alt="Old ferry boat"
+              style="margin-bottom: 20px;">
+
+            <p style="text-align: justify; font-weight: 300; line-height: 1.2; margin-bottom: 29px">
+              It all started with an old ferry that transported farmers to Reflux Island, but today our company
+              transports
+              passengers with speedboats, yachts, ferries and cruise ships powered by green
+              energy.<br><br>
+              We will continue to improve all our activities so that Green Escapade remains your preferred shipping
+              company in the future, worldwide!
+            </p>
+            <img src="5.webp" width="100%" height="auto" alt="Cruise ship fleet" border="0">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+          <div class="container py-5">
+            <div class="row">
+
+              <div class="col-md-3 text-center">
+                <div class="counter">
+                  <img src="mincruises.webp" width="100%" height="auto" alt="mincruises speedtboat" border="0">
+                  <p>MINCRUISES</p>
+                  <p class="count" data-target="7100" style="color: red;">0</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 text-center">
+                <div class="counter">
+                  <img src="midcruises.webp" width="100%" height="auto" alt="midcruises yacht" border="0">
+                  <p>MIDCRUISES</p>
+                  <p class="count" data-target="5300" style="color: red;">0</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 text-center">
+                <div class="counter">
+                  <img src="maxcruises.webp" width="100%" height="auto" alt="mascruises ferry" border="0">
+                  <p>MAXCRUISES</p>
+                  <p class="count" data-target="3500" style="color: red;">0</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 text-center">
+                <div class="counter">
+                  <img src="bigcruises.webp" width="100%" height="auto" alt="bigcruises ship" border="0">
+                  <p>BIGCRUISES</p>
+                  <p class="count" data-target="1700" style="color: red;">0</p>
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
       </div>
-    </main>
-    <!-- PORTFOLIO STOP -->
 
-    <!-- FOOTER -->
-    <footer class="container-fluid py-4 text-center">
-      <!-- MY LINKEDIN ACCOUNT LINK -->
-      <div class="linkedin-container">
-        <a href="https://www.linkedin.com/in/cristian-t-664193210/" target="_blank" rel="noopener noreferrer"
-          class="animated-linkedin-btn" aria-label="Vizitează profilul meu LinkedIn">
-          <div class="btn-content">
-            <img src="./my-photo.jpg" alt="My photo" class="my-image">
-            <div class="text-group">
-              <h5 class="btn-title">Cristian T Profile</h5>
+      <section class="text-center" id="welcome-message" style="margin-bottom: 71px;">
+        <div class="desk-text-container">
+          <h4 style="color: red;">
+            COME WITH US IN A<br>
+            <span style="color: springgreen;">GREEN ESCAPADE!</span><br>
+            OUR CRUISES INCLUDE<br>
+            <span id="word" style="color: springgreen;">FRESH FISH MENU</span>
+          </h4>
+        </div>
+      </section>
+
+      <!-- PARALLAX - START -->
+      <div class="image-background" id="underwater">
+        <!-- CANVAS PEȘTE -->
+        <canvas id="fishCanvas"></canvas>
+        <!-- BATISCAF -->
+        <div class="batiscaf-wrapper">
+          <img src="batiscaf.webp" width="100%" height="auto" class="batiscaf-animat" alt="Batiscaf">
+        </div>
+      </div>
+      <!-- PARALLAX - STOP -->
+
+
+      <h3 style="font-weight: 800; color: springgreen; margin-top: 57px;">
+        NOT CONVINCED YET?</h3>
+      <img src="./sailor-miss.webp" alt="sailor miss" loading="lazy" width="100" height="100"
+        style="width: 250px; height: auto; object-fit: cover; margin-top:-51px; margin-left: 31px;"><br>
+      <button class="btn btn-outline-dark btn-lg" type="submit"
+        style="font-weight: 800; text-shadow: .8px .8px .8px black;"
+        onclick="alert('Acesta este un website demo! Nu se pot trimite date personale!')">
+        GET IN TOUCH!</button>
+
+      <!-- SERVICES -->
+      <div id="services" class="container-fluid text-center bg-white">
+        <div class="text-center">
+          <h2 style="margin-top: 71px; margin-bottom: 59px;">SERVICES</h2>
+        </div>
+
+        <div class="container-fluid px-md-5">
+          <div class="row">
+            <div class="col-sm-3 col-12 mb-4">
+              <div class="card text-center" id="panel1">
+                <div class="card-header" style="background-color: cyan;">
+                  <h3 style="color: gold;">MINCRUISE</h3>
+                </div>
+                <div class="card-body">
+                  <img src="1.webp" width="100%" height="auto" alt="speedboat" class="enlarge-image"><br><br>
+                  <h4 style="color: cyan;">
+                    <small>FISHING & SKIING</small><br>
+                    <small>BREAKFEST MENU</small><br>
+                    ★★★★★ 4.9
+                  </h4><br>
+                  <img src="11.webp" width="100%" height="auto" alt="fishing" class="enlarge-image">
+                </div>
+              </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#0077b5">
-              <path
-                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
+
+            <div class="col-sm-3 col-12 mb-4">
+              <div class="card text-center" id="panel2">
+                <div class="card-header" style="background-color: #ffa500;">
+                  <h3 style="color: springgreen;">MIDCRUISE</h3>
+                </div>
+                <div class="card-body">
+                  <img src="2.webp" width="100%" height="auto" alt="yacht" class="enlarge-image"><br><br>
+                  <h4 style="color: #ffa500;">
+                    <small>DIVING & JETSKI</small><br>
+                    <small>HALF-BOARD MENU</small><br>
+                    ★★★★☆ 4.1
+                  </h4><br>
+                  <img src="12.webp" width="100%" height="auto" alt="diving" class="enlarge-image">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-12 mb-4">
+              <div class="card text-center" id="panel3">
+                <div class="card-header" style="background-color: magenta;">
+                  <h3 style="color: springgreen;">MAXCRUISE</h3>
+                </div>
+                <div class="card-body">
+                  <img src="3.webp" width="100%" height="auto" alt="ferry" class="enlarge-image"><br><br>
+                  <h4 style="color: magenta;">
+                    <small>SAUNA & JACUZZI</small><br>
+                    <small>ALL INCLUSIVE MENU</small><br>
+                    ★★★★★ 4.9
+                  </h4><br>
+                  <img src="13.webp" width="100%" height="auto" alt="jacuzzi" class="enlarge-image">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-12 mb-4">
+              <div class="card text-center" id="panel4">
+                <div class="card-header" style="background-color: springgreen;">
+                  <h3 style="color: magenta;">BIGCRUISE</h3>
+                </div>
+                <div class="card-body">
+                  <img src="4.webp" width="100%" height="auto" alt="cruise ship" class="enlarge-image"><br><br>
+                  <h4 style="color: springgreen;">
+                    <small>WATER PARK & MALL</small><br>
+                    <small>ALL INCLUSIVE MENU</small><br>
+                    ★★★★☆ 3.9
+                  </h4><br>
+                  <img src="14.webp" width="100%" height="auto" alt="water park" class="enlarge-image">
+                </div>
+              </div>
+            </div>
+
+          </div><br><br>
+        </div>
+      </div>
+
+      <!-- REVIEWS -->
+      <div id="reviews" class="container-fluid px-md-5 text-center">
+        <h2>REVIEWS</h2><br><br>
+        <div class="row">
+          <div class="col-sm-4 col-12 text-center mb-4">
+            <img src="./21.webp" width="97%" alt="Swedish buffet" class="customers-image"><br>
+            <div class="reviews" style="color: cyan;">
+              I was impressed by the ▪ All Inclusive Cruise ▪ which was well organized.
+              I ate fresh fish every day! I`m very satisfied with the quality-price ratio!
+              Thank you GREEN ESCAPADE!"<br>
+              ★★★★☆<br>
+              Romanian citizen
+            </div><br>
           </div>
-        </a>
+
+          <div class="col-sm-4 col-12 text-center mb-4">
+            <img src="./22.webp" width="97%" alt="Sea breeze" class="customers-image"><br>
+            <div class="reviews" style="color: magenta;">
+              I booked an ▪ Ultra All Inclusive Cruise ▪ and relaxed in a comfortable
+              cabin with fresh air from the sea breeze. I highly appreciate the services
+              of GREEN ESCAPADE! 5 stars!<br>
+              ★★★★★<br>
+              Greek citizen
+            </div><br>
+          </div>
+
+          <div class="col-sm-4 col-12 text-center mb-4">
+            <img src="./23.webp" width="97%" alt="Ship mall" class="customers-image"><br>
+            <div class="reviews" style="color: springgreen;">
+              I was on ▪ Half-Board Cruise ▪ and after diving in the sea, I went in
+              a shopping mall with low prices! The food was very tasty! So, thank
+              you for the beautiful & unforgettable moments!<br>
+              ★★★★☆<br>
+              French citizen
+            </div><br>
+          </div>
+        </div>
+      </div>
+
+      <!-- TICKETS -->
+      <h2 id="tickets">
+        TICKETS</h2>
+      <br><br>
+      <img src="./sailor-woman.webp" alt="Sailor women" loading="lazy" width="90" height="100"
+        style="width: 305px; height: auto; object-fit: cover; margin-top: -20px; margin-bottom: -1px;">
+      <div class="bookingSystem">
+        <div class="booking-container">
+          <form id="bookingForm">
+            <h3>MAKE A RESERVATION!</h3>
+            <label for="number">👨‍👨‍👦 NUMBER OF PEOPLE:</label>
+            <input type="number" id="number" class="form-control mb-3" placeholder="1, 2, 3 ..." required>
+
+            <label for="type">🚤 CRUISE TYPE:</label>
+            <select id="type" class="form-select mb-3" required>
+              <option value="MINCRUISE">MINCRUISE</option>
+              <option value="MIDCRUISE">MIDCRUISE</option>
+              <option value="MAXCRUISE">MAXCRUISE</option>
+              <option value="BIGRUISE">BIGRUISE</option>
+            </select>
+
+            <label for="date">📅 CRUISE DATE:</label>
+            <input type="date" id="date" class="form-control mb-3" required>
+
+            <label for="time">🕒 CRUISE TIME:</label>
+            <input type="time" id="time" class="form-control mb-3" required>
+
+            <label for="info">📩 CRUISE DETAILS:</label>
+            <textarea id="info" class="form-control mb-3" placeholder="Your message..." required></textarea>
+            <button type="submit" id="bookBtn" class="btn btn-success w-100">BOOK TICKET</button>
+          </form>
+
+          <div id="generatedTicket" class="ticket">
+            <div class="ticket-row">RESERVATION TICKET</div>
+            <div class="ticket-row">GREEN ESCAPADE</div>
+            <div class="ticket-row">People: <span id="res-people"></span></div>
+            <div class="ticket-row">Type: <span id="res-type"></span></div>
+            <div class="ticket-row">Date: <span id="res-date"></span></div>
+            <div class="ticket-row">Time: <span id="res-time"></span></div>
+            <div class="ticket-row">Details: <span id="res-info"></span></div>
+            <div class="ticket-row">A PLEASANT CRUISE!</div>
+            <button type="button" onclick="resetForm()" class="reset-btn">ANOTHER TICKET?</button>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- CONTACTS -->
+  <footer class="container-fluid px-md-5 text-center">
+    <div class="row">
+      <h2 id="contacts" style="margin-top: 53px;">
+        CONTACTS</h2>
+      <div class="row gx-2 gy-3 text-center justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="footer-list" style="font-weight: 800; color: springgreen;">
+            CRUISES</div>
+          <ul class="list-unstyled">
+            <li><a href="#">
+                Mincruise
+              </a>
+            </li>
+            <li><a href="#">
+                Midcruise
+              </a>
+            </li>
+            <li><a href="#">
+                Maxcruise
+              </a>
+            </li>
+            <li><a href="#">
+                Bigcruise
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="footer-list" style="font-weight: 800; color: springgreen;">
+            SOCIAL</div>
+          <ul class="list-unstyled">
+            <li><a href="#">
+                Facebook
+              </a>
+            </li>
+            <li><a href="#">
+                Instagram
+              </a>
+            </li>
+            <li><a href="#">
+                YouTube
+              </a>
+            </li>
+            <li><a href="#">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="footer-list" style="font-weight: 800; color: springgreen;">
+            SUPPORT</div>
+          <ul class="list-unstyled">
+            <li><a href="#">
+                Tickets
+              </a>
+            </li>
+            <li><a href="#">
+                Adress
+              </a>
+            </li>
+            <li><a href="#">
+                Email
+              </a>
+            </li>
+            <li><a href="#">
+                Phone
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="footer-list" style="font-weight: 800; color: springgreen;">
+            LINKS</div>
+          <ul class="list-unstyled">
+            <li><a href="#">
+                Career
+              </a>
+            </li>
+            <li><a href="#">
+                Orders
+              </a>
+            </li>
+            <li><a href="#">
+                Photos
+              </a>
+            </li>
+            <li><a href="#">
+                Reviews
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 text-center">
+        <h2 style="margin-top: 35px;">NEWSLETTER</h2>
+        <h3 style="font-weight: 300; color: springgreen; margin-top: 10px;">Subscribe:</h3>
+
+        <form class="news-letter-container" onsubmit="return false;">
+          <input type="email" name="news-email" id="news-email" placeholder="Your email address" required>
+          <button type="submit"
+            onclick="alert('Acesta este un website demo! Nu se pot trimite date personale!')">Send</button>
+        </form>
+      </div>
+      <!-- MY LINKEDIN ACCOUNT LINK -->
+      <div class="col-12 d-flex justify-content-center">
+        <div class="linkedin-container">
+          <a href="https://www.linkedin.com/in/cristian-t-664193210/" target="_blank" rel="noopener noreferrer"
+            class="animated-linkedin-btn" aria-label="Vizitează profilul meu LinkedIn">
+            <div class="btn-content">
+              <img src="./my-photo.jpg" alt="My photo" class="my-image">
+              <div class="text-group">
+                <div class="btn-title">Cristian T Profile</div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#0077b5">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </div>
+          </a>
+        </div>
       </div>
       <!-- CALL TO ACTION SVG TEXT - START-->
       <div style="width: 287px; margin: auto;">
@@ -219,162 +536,340 @@
             </text>
           </symbol>
           <!-- CULOARE FUNDAL TEXT -->
-          <use xlink:href="#profile-text" fill="royalblue"></use>
+          <use xlink:href="#profile-text" fill="cyan"></use>
           <!-- CULOARE CONTUR TEXT ANIMAT -->
           <use xlink:href="#profile-text" class="text-animation"></use>
         </svg>
       </div>
       <!-- MY LINKEDIN ACCOUNT LINK & CTA SVG TEXT - END-->
-      <small>&copy; 2026 CRISTIAN T PORTFOLIO</small><br>
 
-    </footer>
+      <!-- INFO PORTOFOLIU-->
+      <section>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <small>&copy; 2026 GREEN ESCAPADE PROJECT</small><br>
+            ✓ Audit Lighthouse:<br>
+            Performance: 89 | Accesibility: 94 | Best practices: 100 | SEO: 100<br>
+            <small>Built with HTML, CSS & JavaScript technologies</small><br>
+            <small>Serviciile si produsele prezentate sunt fictive!<br>
+            </small>
+          </div>
+        </div>
+      </section>
 
-    <script>
-      // 1. GENERARE STELUTE - START
-      function initStars() {
-        const starsContainer = document.getElementById("stars");
-        if (!starsContainer) return;
+    </div><br>
+    <!-- INFO MY PORTFOLIO-->
+  
+  </footer>
 
-        const colors = ["springgreen", "cyan", "magenta", "red", "purple", "royalblue", "orange", "gold"];
-        const symbols = ["✶", "✷"];
+  <script>
+    // --- 2. COUNTER ANIMATION (INTERSECTION OBSERVER) ---
+    const animateCounter = (el) => {
+      const target = +el.getAttribute('data-target');
+      const duration = 2500; // 2.5 secunde
+      const startStep = 0;
+      const startTime = performance.now();
 
-        for (let i = 0; i < 150; i++) {
-          const star = document.createElement("div");
-          star.className = "star";
-          star.style.position = "absolute";
+      const step = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
 
-          // APARITIE ALEATORIE STELE
-          const teleport = (el) => {
-            el.style.left = Math.random() * 100 + "vw";
-            el.style.top = Math.random() * 100 + "vh";
-            el.style.color = colors[Math.floor(Math.random() * colors.length)];
-          };
+        // Easing function (echivalent cu 'swing')
+        const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
 
-          // POZITIONARE INITIALA
-          teleport(star);
+        const currentValue = Math.ceil(ease * target);
+        el.innerText = currentValue;
 
-          const size = Math.random() * 4 + 3;
-          star.style.fontSize = size + "px";
-          star.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
-
-          const duration = 2000 + Math.random() * 3000;
-          const delay = Math.random() * 5000;
-          star.style.animation = `stars-twinkle ${duration}ms ease-in-out ${delay}ms infinite`;
-
-          // --- TELEPORTARE STELUTE ---
-          star.addEventListener('animationiteration', () => {
-            teleport(star);
-          });
-
-          starsContainer.appendChild(star);
+        if (progress < 1) {
+          el.dataset.animationFrame = requestAnimationFrame(step);
+        } else {
+          el.innerText = target;
         }
-      }
+      };
 
-      // INITIALIZARE GENERATOR STELUTE
-      initStars();
-      // 1. GENERARE STELUTE - STOP
+      el.dataset.animationFrame = requestAnimationFrame(step);
+    };
 
-      // 2. GENERARE TEXT SCRAMBLE - START
-      class TextScramble {
-        constructor(el) {
-          this.el = el;
-          this.chars = '!<>-_\\/[]{}—=+*^?#________';
-          this.update = this.update.bind(this);
-        }
-        setText(newText) {
-          const oldText = this.el.innerText;
-          const length = Math.max(oldText.length, newText.length);
-          const promise = new Promise((resolve) => this.resolve = resolve);
-          this.queue = [];
-          for (let i = 0; i < length; i++) {
-            const from = oldText[i] || '';
-            const to = newText[i] || '';
-            const start = Math.floor(Math.random() * 40);
-            const end = start + Math.floor(Math.random() * 35);
-            this.queue.push({ from, to, start, end });
-          }
-          cancelAnimationFrame(this.frameRequest);
-          this.frame = 0;
-          this.update();
-          return promise;
-        }
-        update() {
-          let output = '';
-          let complete = 0;
-          for (let i = 0, n = this.queue.length; i < n; i++) {
-            let { from, to, start, end, char } = this.queue[i];
-            if (this.frame >= end) {
-              complete++;
-              output += to;
-            } else if (this.frame >= start) {
-              if (!char || Math.random() < 0.28) {
-                char = this.randomChar();
-                this.queue[i].char = char;
-              }
-              output += `<span class="chars">${char}</span>`;
-            } else {
-              output += from;
-            }
-          }
-          this.el.innerHTML = output;
-          if (complete === this.queue.length) {
-            this.resolve();
-          } else {
-            this.frameRequest = requestAnimationFrame(this.update);
-            this.frame++;
-          }
-        }
-        randomChar() {
-          return this.chars[Math.floor(Math.random() * this.chars.length)];
-        }
-      }
+    const observerOptions = { threshold: 0.3 };
 
-      const phrases = [
-        'Technical support',
-        'Frontend development',
-        'Cookie management',
-        'Data analytics',
-        'Email marketing'
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+        } else {
+          // Oprim animația și resetăm
+          cancelAnimationFrame(entry.target.dataset.animationFrame);
+          entry.target.innerText = "0";
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.count').forEach(el => observer.observe(el));
+
+
+    // --- 3. CHANGING TEXT (ABOUT US SECTION) ---
+    const wordElement = document.getElementById("word");
+    if (wordElement) {
+      let count = 0;
+      const wordsArray = [
+        "FISHING", "JET SKI", "SCUBA DIVING",
+        "JACUZZI", "WATER PARK",
+        "DUTY FREE SHOP", "SAUNA"
       ];
 
-      const el = document.querySelector('.scrambleText');
-      if (el) {
-        const fx = new TextScramble(el);
-        let counter = 0;
-        const next = () => {
-          fx.setText(phrases[counter]).then(() => {
-            setTimeout(next, 3500);
-          });
-          counter = (counter + 1) % phrases.length;
-        };
-        next();
+      setInterval(() => {
+        count++;
+        // Efect de Fade Out / Fade In folosind CSS Opacity
+        wordElement.style.transition = "opacity 0.4s";
+        wordElement.style.opacity = 0;
+
+        setTimeout(() => {
+          wordElement.innerText = wordsArray[count % wordsArray.length];
+          wordElement.style.opacity = 1;
+        }, 400);
+
+      }, 1700);
+    }
+  </script>
+
+  <script>
+
+    /* =========================================
+     CANVAS PESTI
+     ========================================= */
+
+    const canvas = document.getElementById('fishCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let width, height, fishes = [];
+    const colorPairs = [
+      { body: 'magenta', detail: 'springgreen' },
+      { body: 'springgreen', detail: 'magenta' },
+      { body: 'cyan', detail: 'gold' },
+      { body: 'gold', detail: 'cyan' }
+    ];
+
+    function resize() {
+      const section = document.getElementById('underwater');
+      if (section) {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = section.offsetHeight;
       }
-      // 2. GENERARE TEXT SCRAMBLE - STOP
+    }
+    window.addEventListener('resize', resize);
+    resize();
 
+    class Fish {
+      constructor(fastStart = false) {
+        this.init(fastStart);
+      }
 
-    </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const containers = document.querySelectorAll('.animation-container');
-        let currentIndex = 0;
-        const animationDuration = 3500; 
+      init(fastStart = false) {
+        this.direction = Math.random() > 0.5 ? 1 : -1;
+        this.x = fastStart ? (this.direction === 1 ? -100 : width + 100) : (this.direction === 1 ? -400 : width + 400);
+        this.y = Math.random() * (height * 0.75) + (height * 0.1);
 
-        function playSequentialAnimation() {
-            containers.forEach(container => container.classList.remove('active'));
-            containers[currentIndex].classList.add('active');
-            currentIndex = (currentIndex + 1) % containers.length;
-            setTimeout(playSequentialAnimation, animationDuration);
+        this.baseSpeed = (Math.random() * 0.6 + 0.4);
+        this.currentSpeed = this.baseSpeed;
+
+        const pair = colorPairs[Math.floor(Math.random() * colorPairs.length)];
+        this.color = pair.body;
+        this.detailColor = pair.detail;
+
+        this.size = Math.random() < 0.4 ? (Math.random() * 10 + 35) : (Math.random() * 15 + 50);
+
+        this.patternType = Math.floor(Math.random() * 3);
+        this.tailType = Math.floor(Math.random() * 4);
+
+        this.wave = Math.random() * Math.PI * 2;
+        this.waveSpeed = Math.random() * 0.02 + 0.01;
+      }
+
+      update() {
+        this.x += this.currentSpeed * this.direction;
+        this.wave += this.waveSpeed;
+        if ((this.direction === 1 && this.x > width + 400) || (this.direction === -1 && this.x < -400)) {
+          this.init(false);
         }
-        if(containers.length > 0) {
-            playSequentialAnimation();
+      }
+
+      draw() {
+        this.update();
+        const yOffset = Math.sin(this.wave) * 5;
+        const s = this.size;
+        const bodyH = s / 5.5;
+
+        ctx.save();
+        ctx.translate(this.x, this.y + yOffset);
+        if (this.direction === -1) ctx.scale(-1, 1);
+
+        // --- 1. CORP ---
+        ctx.beginPath();
+        if (this.patternType === 2) {
+          let grad = ctx.createLinearGradient(0, 0, s, 0);
+          grad.addColorStop(0, this.color);
+          grad.addColorStop(1, this.detailColor);
+          ctx.fillStyle = grad;
+        } else {
+          ctx.fillStyle = this.color;
         }
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = this.color;
+        ctx.ellipse(s / 2, 0, s / 2, bodyH, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        // --- 2. OCHI ---
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.arc(s * 0.85, -bodyH * 0.2, s * 0.045, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.fillStyle = "black";
+        ctx.arc(s * 0.87, -bodyH * 0.2, s * 0.025, 0, Math.PI * 2);
+        ctx.fill();
+
+        // --- 3. BRANHIA ---
+        ctx.strokeStyle = "rgba(0,0,0,0.2)";
+        ctx.lineWidth = 1.5;
+        const gillX = s * 0.72;
+        const dxGill = (gillX - s / 2) / (s / 2);
+        const gillLimit = Math.sqrt(Math.max(0, 1 - dxGill * dxGill)) * bodyH * 0.8;
+        ctx.beginPath();
+        ctx.moveTo(gillX, -gillLimit);
+        ctx.quadraticCurveTo(gillX - 5, 0, gillX, gillLimit);
+        ctx.stroke();
+
+        // --- 4. DETALII ---
+        if (this.patternType === 0) {
+          ctx.strokeStyle = this.detailColor;
+          ctx.lineWidth = s * 0.09;
+          ctx.lineCap = "round";
+          for (let i = 0; i < 3; i++) {
+            let posX = s * (0.2 + i * 0.16);
+            let dx = (posX - s / 2) / (s / 2);
+            let localH = Math.sqrt(Math.max(0, 1 - dx * dx)) * bodyH;
+            let stripeLimit = localH * 0.8;
+            ctx.beginPath();
+            ctx.moveTo(posX, -stripeLimit);
+            ctx.quadraticCurveTo(posX + 3, 0, posX, stripeLimit);
+            ctx.stroke();
+          }
+        } else if (this.patternType === 1) {
+          ctx.fillStyle = this.detailColor;
+          for (let i = 0; i < 6; i++) {
+            let pX = s * (0.15 + i * 0.1);
+            ctx.beginPath();
+            ctx.arc(pX, (i % 2 === 0 ? 1 : -1) * (bodyH * 0.3), s * 0.03, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+
+        // --- 5. COADA ---
+        ctx.beginPath();
+        ctx.fillStyle = (this.patternType === 2) ? this.detailColor : this.color;
+
+        if (this.tailType === 0) { // V-Sharp
+          ctx.moveTo(0, 0);
+          ctx.lineTo(-s * 0.22, -bodyH * 1.2);
+          ctx.lineTo(-s * 0.06, 0);
+          ctx.lineTo(-s * 0.22, bodyH * 1.2);
+        } else if (this.tailType === 1) { // Fan
+          ctx.moveTo(s * 0.05, 0);
+          ctx.quadraticCurveTo(-s * 0.25, -bodyH * 1.8, -s * 0.3, 0);
+          ctx.quadraticCurveTo(-s * 0.25, bodyH * 1.8, s * 0.05, 0);
+        } else if (this.tailType === 2) { // Bifurcată Elegantă
+          ctx.moveTo(0, 0);
+          ctx.bezierCurveTo(-s * 0.2, -bodyH * 1.7, -s * 0.35, -bodyH * 0.5, -s * 0.1, 0);
+          ctx.bezierCurveTo(-s * 0.35, bodyH * 0.5, -s * 0.2, bodyH * 1.7, 0, 0);
+        } else { // RÂNDUNICĂ MICȘORATĂ
+          ctx.moveTo(s * 0.05, 0);
+          ctx.lineTo(-s * 0.3, -bodyH * 1.3); // Lob scurt
+          ctx.lineTo(-s * 0.12, 0);          // Scobitură puțin adâncă
+          ctx.lineTo(-s * 0.3, bodyH * 1.3);
+        }
+        ctx.fill();
+
+        ctx.restore();
+      }
+    }
+
+    function startSimulation() {
+      fishes = [];
+      for (let i = 0; i < 22; i++) {
+        setTimeout(() => { fishes.push(new Fish(true)); }, i * 120);
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      fishes.forEach(fish => fish.draw());
+      requestAnimationFrame(animate);
+    }
+
+    startSimulation();
+    animate();
+  </script>
+
+  <!-- TICKET RESERVATION -->
+  <script>
+    const bookingForm = document.getElementById('bookingForm');
+    const ticket = document.getElementById('generatedTicket');
+
+    // SUNET EMITERE TICKET
+    function playTicketSound() {
+
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const oscillator = audioCtx.createOscillator();
+      const gainNode = audioCtx.createGain();
+
+      oscillator.type = 'sine';
+      oscillator.frequency.setValueAtTime(400, audioCtx.currentTime);
+      oscillator.frequency.exponentialRampToValueAtTime(800, audioCtx.currentTime + 0.1);
+
+      gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+
+      oscillator.start();
+      oscillator.stop(audioCtx.currentTime + 1);
+    }
+
+    bookingForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // PRELUARE VALORI SELECTATE DE UTILIZATOR
+      const people = document.getElementById('number').value;
+      const type = document.getElementById('type').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const info = document.getElementById('info').value;
+
+      // POPULAM TICKETUL
+      document.getElementById('res-people').innerText = people;
+      document.getElementById('res-type').innerText = type;
+      document.getElementById('res-date').innerText = date;
+      document.getElementById('res-time').innerText = time;
+      document.getElementById('res-info').innerText = info;
+
+      // REDARE SUNET
+      playTicketSound();
+
+      // ACTIVARE ANIMATIE TICKET
+      ticket.classList.add('active');
     });
-    </script>
 
-
-    <!-- BOOTSTRAP INITIALIZATION - STOP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    // BUTON RESET TICKET
+    function resetForm() {
+      document.getElementById('generatedTicket').classList.remove('active');
+      document.getElementById('bookingForm').reset();
+    }
+  </script>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 </html>
