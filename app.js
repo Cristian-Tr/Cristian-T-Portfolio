@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const phrases = [
     'Technical support',
     'Frontend development',
-    'Training & Coaching',
     'Cookie management',
     'Data analytics',
     'Email marketing'
