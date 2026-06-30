@@ -410,6 +410,21 @@ video {
 	}
 }
 
+/* Oprire animații implicite dacă NU există clasa .active */
+.pointer-group, .hand-emoji, .wave-circle {
+    animation-play-state: paused;
+    visibility: hidden; /* Ascunde celelalte mâini când nu sunt active */
+}
+
+/* Activare animații doar pentru elementul curent */
+.animation-container.active .pointer-group,
+.animation-container.active .hand-emoji,
+.animation-container.active .wave-circle {
+    animation-play-state: running;
+    visibility: visible;
+}
+
+
 .thumbnail::before,
 .thumbnail:after {
 	content: "";
@@ -730,3 +745,4 @@ strong {
 :root {
 	color-scheme: light only;
 }
+

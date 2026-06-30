@@ -122,7 +122,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   // 2. GENERARE TEXT SCRAMBLE - STOP
 
+ const containers = document.querySelectorAll('.animation-container');
+    let currentIndex = 0;
+    const animationDuration = 3500; 
 
+    function playSequentialAnimation() {
+        containers.forEach(container => container.classList.remove('active'));
+        containers[currentIndex].classList.add('active');
+        currentIndex = (currentIndex + 1) % containers.length;
+        setTimeout(playSequentialAnimation, animationDuration);
+    }
+    
+     if(containers.length > 0) {
+        playSequentialAnimation();
+    }
 
-
+    
 });
+
+
