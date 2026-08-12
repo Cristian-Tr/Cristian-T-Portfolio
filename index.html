@@ -189,11 +189,23 @@
 
         </div>
       </div>
+
     </main>
     <!-- PORTFOLIO STOP -->
 
     <!-- FOOTER -->
     <footer class="container-fluid py-4 text-center">
+
+          <div class="ticker-box">
+            <div class="ticker-text">
+              <span>🚀 Welcome to My Portfolio Landing Page! 🎯 Please visit my GitHub Projects with outstanding Lighthouse audit
+                results (Performance>80 | Accessibility: 100 | Best practices: 100 | SEO: 100)!
+                💻 I implemented custom styles and UI functionalities, adhering to responsive web design (RWD)
+                principles and ensuring optimal visibility in both dark and light modes.
+                ⚡ Optimized for extreme performance, and lightning-fast loading speeds.</span>
+            </div>
+          </div>
+          
       <!-- MY LINKEDIN ACCOUNT LINK -->
       <div class="linkedin-container">
         <a href="https://www.linkedin.com/in/cristian-t-664193210/" target="_blank" rel="noopener noreferrer"
@@ -354,22 +366,22 @@
 
 
     </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         const containers = document.querySelectorAll('.animation-container');
         let currentIndex = 0;
-        const animationDuration = 3500; 
+        const animationDuration = 3500;
 
         function playSequentialAnimation() {
-            containers.forEach(container => container.classList.remove('active'));
-            containers[currentIndex].classList.add('active');
-            currentIndex = (currentIndex + 1) % containers.length;
-            setTimeout(playSequentialAnimation, animationDuration);
+          containers.forEach(container => container.classList.remove('active'));
+          containers[currentIndex].classList.add('active');
+          currentIndex = (currentIndex + 1) % containers.length;
+          setTimeout(playSequentialAnimation, animationDuration);
         }
-        if(containers.length > 0) {
-            playSequentialAnimation();
+        if (containers.length > 0) {
+          playSequentialAnimation();
         }
-    });
+      });
     </script>
 
 
