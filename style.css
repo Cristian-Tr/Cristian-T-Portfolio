@@ -614,7 +614,8 @@ strong {
    6. FOOTER
    ============================================================ */
 
-da cu scroll text care ascunde textl care iese în afara ecranului */ .ticker-box {
+/* Ascundere text care iese în afara ecranului */ 
+.ticker-box {
 	width: 100%;
 	overflow: hidden;
 	border-top: 1px solid #f3f2f2;
