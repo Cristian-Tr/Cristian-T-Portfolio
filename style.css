@@ -80,6 +80,7 @@ header,
 main {
 	animation: fadeInEfect 1s ease-out;
 }
+
 /* ============================================================
    HEADER
    ============================================================ */
@@ -182,9 +183,92 @@ h5 {
 		width: 20%;
 	}
 }
+
 /* ============================================================
    MAIN
    ============================================================ */
+/* SCHOOL LIBRARY APP */
+.balloon-row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.balloon-link {
+	text-decoration: none;
+	display: inline-block;
+}
+
+#balloon {
+	animation: balloon-float 35s ease-in-out infinite;
+	display: block;
+	margin: 0 auto;
+}
+
+#buttonLinks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	color: rgb(166, 166, 166);
+	text-shadow: 0.8px 0.8px 0.8px black;
+	width: 153px;
+	height: 25px;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	border-radius: 12px;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
+		inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
+		inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	margin: 25px auto 0 auto;
+	padding-bottom: 4px;
+	text-decoration: none;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER EFFECT OPTIONAL
+#buttonLinks:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 0.8em rgba(0, 255, 255, 0.6);
+}
+		*/
+
+@keyframes balloon-float {
+	0% {
+		transform: translate(0, 8px) scale(1) rotate(-4deg);
+	}
+
+	17% {
+		transform: translate(0, -30px) scale(1) rotate(3deg);
+	}
+
+	26% {
+		transform: translate(0, 8px) scale(1) rotate(0deg);
+	}
+
+	35% {
+		transform: translate(0, -32px) scale(1) rotate(-2deg);
+	}
+
+	53% {
+		transform: translate(0, 8px) scale(1) rotate(3deg);
+	}
+
+	71% {
+		transform: translate(0, -30px) scale(1) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(0, 8px) scale(1) rotate(-4deg);
+	}
+}
+
 /* ROCKETS */
 /* MY PORTFOLIO  */
 .thumbnail {
@@ -315,6 +399,7 @@ video {
 
 .pointer-group {
 	position: relative;
+	margin-top: -50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -612,90 +697,12 @@ strong {
 		background: transparent;
 	}
 }
-/* SCHOOL LIBRARY */
-.balloon-row {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 40px;
-}
-
-.balloon-link {
-	text-decoration: none;
-	display: inline-block;
-}
-
-#balloon {
-	animation: balloon-float 35s ease-in-out infinite;
-	display: block;
-	margin: 0 auto;
-}
-
-#buttonLinks {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #00ffff;
-	color: white;
-	text-shadow: 0.8px 0.8px 0.8px black;
-	width: 197px;
-	height: 35px;
-	font-size: 17px;
-	font-weight: 800;
-	text-align: center;
-	border-radius: 12px;
-	box-shadow: 0 0 0.5em rgba(0, 0, 0, 1),
-		inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
-		inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
-	cursor: pointer;
-	margin: 15px auto 0 auto;
-	text-decoration: none;
-	transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#buttonLinks:hover {
-	transform: scale(1.05);
-	box-shadow: 0 0 0.8em rgba(0, 255, 255, 0.6);
-}
-
-@keyframes balloon-float {
-	0% {
-		transform: translate(0, 8px) scale(1) rotate(-4deg);
-	}
-
-	17% {
-		transform: translate(0, -30px) scale(1) rotate(3deg);
-	}
-
-	26% {
-		transform: translate(0, 8px) scale(1) rotate(0deg);
-	}
-
-	35% {
-		transform: translate(0, -32px) scale(1) rotate(-2deg);
-	}
-
-	53% {
-		transform: translate(0, 8px) scale(1) rotate(3deg);
-	}
-
-	71% {
-		transform: translate(0, -30px) scale(1) rotate(0deg);
-	}
-
-	100% {
-		transform: translate(0, 8px) scale(1) rotate(-4deg);
-	}
-}
 
 /* ============================================================
    FOOTER
    ============================================================ */
 
-/* Ascundere text care iese în afara ecranului */ 
+/* Ascundere text care iese în afara ecranului */
 .ticker-box {
 	width: 100%;
 	overflow: hidden;
