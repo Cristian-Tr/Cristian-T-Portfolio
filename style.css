@@ -138,11 +138,11 @@ h2 {
 	text-align: center;
 	font-weight: 800;
 	color: royalblue;
-	text-shadow: .8px .8px 1px black;
+	text-shadow: .3px .3px .3px black;
 }
 
 .scrambleContainer {
-	margin-top: 8px;
+	margin-top: 1px;
 	height: 100%;
 	width: 100%;
 	justify-content: center;
@@ -241,7 +241,7 @@ h5 {
 
 @keyframes balloon-float {
 	0% {
-		transform: translate(0, 8px) scale(1) rotate(-4deg);
+		transform: translate(0, 8px) scale(1) rotate(-5deg);
 	}
 
 	17% {
@@ -253,7 +253,7 @@ h5 {
 	}
 
 	35% {
-		transform: translate(0, -32px) scale(1) rotate(-2deg);
+		transform: translate(0, -32px) scale(1) rotate(-5deg);
 	}
 
 	53% {
@@ -265,7 +265,7 @@ h5 {
 	}
 
 	100% {
-		transform: translate(0, 8px) scale(1) rotate(-4deg);
+		transform: translate(0, 8px) scale(1) rotate(-5deg);
 	}
 }
 
