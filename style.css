@@ -109,8 +109,8 @@ main {
 .portrait-picture {
 	margin: 8px auto;
 	margin-top: 53px;
-	background-color: rgb(230, 221, 221);
-	background-image: url(./my-photo.jpg);
+	background-color: white;
+	background-image: url(./photo.webp);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -394,7 +394,7 @@ video {
 .animation-container {
 	position: relative;
 	width: 200px;
-	height: 89px;
+	height: 71px;
 	margin: auto;
 	margin-top: 25px;
 	background-color: transparent;
