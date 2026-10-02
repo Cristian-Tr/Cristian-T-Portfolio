@@ -100,12 +100,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const phrases = [
-    'Web design',
-    'IT support',
-    'Frontend projects',
-    'Cookie management',
-    'Data analytics',
-    'Email marketing'
+    'Web Development',
+    'IT Support',
+    'Frontend Projects',
+    'Cookie Management',
+    'Data Analytics',
+    'Digital Marketing'
   ];
 
   const el = document.querySelector('.scrambleText');
