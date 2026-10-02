@@ -194,8 +194,8 @@ h5 {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-top: 17px;
+	margin-bottom: 1px;
 }
 
 .balloon-link {
@@ -226,7 +226,7 @@ h5 {
 		inset 0 0.25em 0.3em rgba(255, 255, 255, 0.35),
 		inset 0 -0.25em 0.3em rgba(0, 0, 0, 0.5);
 	cursor: pointer;
-	margin: 25px auto 0 auto;
+	margin: 17px auto 0 auto;
 	padding-bottom: 4px;
 	text-decoration: none;
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
