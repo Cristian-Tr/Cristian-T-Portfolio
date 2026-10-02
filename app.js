@@ -1,142 +1,65 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-  // 1. GENERARE STELUTE - START
-  function initStars() {
-    const starsContainer = document.getElementById("stars");
-    if (!starsContainer) return;
+    const modal = document.getElementById('bookModal');
+    const modalTitle = document.getElementById('modalBookTitle');
+    const closeBtn = document.getElementById('closeBtn');
+    const quizFeedback = document.getElementById('quizFeedback');
 
-    const colors = ["springgreen", "cyan", "magenta", "red", "purple", "royalblue", "orange", "gold"];
-    const symbols = ["✶", "✷"];
+    // 1. SELECTARE CARTI
+    const books = document.querySelectorAll('.book');
+    books.forEach(book => {
+        book.addEventListener('click', function () {
+            const title = this.getAttribute('data-title');
+            modalTitle.innerText = "Manual Interactiv de " + title + " (Format HTML5/Enhanced)";
+            modal.classList.add('active');
+            quizFeedback.innerText = '';
+        });
+    });
 
-    for (let i = 0; i < 150; i++) {
-      const star = document.createElement("div");
-      star.className = "star";
-      star.style.position = "absolute";
-
-      // APARITIE ALEATORIE STELE
-      const teleport = (el) => {
-        el.style.left = Math.random() * 100 + "vw";
-        el.style.top = Math.random() * 100 + "vh";
-        el.style.color = colors[Math.floor(Math.random() * colors.length)];
-      };
-
-      // POZITIONARE INITIALA
-      teleport(star);
-
-      const size = Math.random() * 4 + 3;
-      star.style.fontSize = size + "px";
-      star.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
-
-      const duration = 2000 + Math.random() * 3000;
-      const delay = Math.random() * 5000;
-      star.style.animation = `stars-twinkle ${duration}ms ease-in-out ${delay}ms infinite`;
-
-      // --- TELEPORTARE STELUTE ---
-      star.addEventListener('animationiteration', () => {
-        teleport(star);
-      });
-
-      starsContainer.appendChild(star);
+    // 2. INCHIDERE DIN BUTON X
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+            modal.classList.remove('active');
+        });
     }
-  }
 
-  // INITIALIZARE GENERATOR STELUTE
-  initStars();
-  // 1. GENERARE STELUTE - STOP
-
-  // 2. GENERARE TEXT SCRAMBLE - START
-  class TextScramble {
-    constructor(el) {
-      this.el = el;
-      this.chars = '!<>-_\\/[]{}—=+*^?#________';
-      this.update = this.update.bind(this);
-    }
-    setText(newText) {
-      const oldText = this.el.innerText;
-      const length = Math.max(oldText.length, newText.length);
-      const promise = new Promise((resolve) => this.resolve = resolve);
-      this.queue = [];
-      for (let i = 0; i < length; i++) {
-        const from = oldText[i] || '';
-        const to = newText[i] || '';
-        const start = Math.floor(Math.random() * 40);
-        const end = start + Math.floor(Math.random() * 35);
-        this.queue.push({ from, to, start, end });
-      }
-      cancelAnimationFrame(this.frameRequest);
-      this.frame = 0;
-      this.update();
-      return promise;
-    }
-    update() {
-      let output = '';
-      let complete = 0;
-      for (let i = 0, n = this.queue.length; i < n; i++) {
-        let { from, to, start, end, char } = this.queue[i];
-        if (this.frame >= end) {
-          complete++;
-          output += to;
-        } else if (this.frame >= start) {
-          if (!char || Math.random() < 0.28) {
-            char = this.randomChar();
-            this.queue[i].char = char;
-          }
-          output += `<span class="chars">${char}</span>`;
-        } else {
-          output += from;
+    // 3. INCHIDERE LA CLICK IN FUNDAL (pe fundal întunecat)
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.classList.remove('active');
         }
-      }
-      this.el.innerHTML = output;
-      if (complete === this.queue.length) {
-        this.resolve();
-      } else {
-        this.frameRequest = requestAnimationFrame(this.update);
-        this.frame++;
-      }
-    }
-    randomChar() {
-      return this.chars[Math.floor(Math.random() * this.chars.length)];
-    }
-  }
+    });
 
-  const phrases = [
-    'Technical support',
-    'Frontend development',
-    'Cookie management',
-    'Data analytics',
-    'Email marketing'
-  ];
 
-  const el = document.querySelector('.scrambleText');
-  if (el) {
-    const fx = new TextScramble(el);
-    let counter = 0;
-    const next = () => {
-      fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 3500);
-      });
-      counter = (counter + 1) % phrases.length;
-    };
-    next();
-  }
-  // 2. GENERARE TEXT SCRAMBLE - STOP
+    // 4. OPTIUNI QUIZ
+    const quizButtons = document.querySelectorAll('.quiz-btn');
+    quizButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const isCorrect = this.getAttribute('data-correct') === 'true';
+            if (isCorrect) {
+                quizFeedback.innerHTML = "🎉 Corect! Acest element JS demonstrează conceptul de evaluare formativă în timp real.";
+                quizFeedback.style.color = "springgreen";
+            } else {
+                quizFeedback.innerHTML = "❌ Incorect! Analizează din nou informațiile din pagina anterioară.";
+                quizFeedback.style.color = "red";
+            }
+        });
+    });
 
- const containers = document.querySelectorAll('.animation-container');
-    let currentIndex = 0;
-    const animationDuration = 3500; 
 
-    function playSequentialAnimation() {
-        containers.forEach(container => container.classList.remove('active'));
-        containers[currentIndex].classList.add('active');
-        currentIndex = (currentIndex + 1) % containers.length;
-        setTimeout(playSequentialAnimation, animationDuration);
-    }
-    
-     if(containers.length > 0) {
-        playSequentialAnimation();
+
+    // 5. OPTIMIZARE YouTube (Lazy Loading pentru eliminarea cookie-urilor la pornire)
+    const videoFacade = document.getElementById('youtube-facade');
+    if (videoFacade) {
+        videoFacade.addEventListener('click', function () {
+            this.innerHTML = `
+                <iframe src="https://www.youtube-nocookie.com/embed/DebnwYhYAF8"
+                    title="differences between printed books or electronic books-Books or no books"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen style="width:100%; height:100%; border:none; position:absolute; top:0; left:0;">
+                </iframe>
+            `;
+        });
     }
 
-    
 });
-
-
