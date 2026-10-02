@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // INITIALIZARE GENERATOR STELUTE
+  // INITIALIZARE GENERATOR STELE
   initStars();
-  // 1. GENERARE STELUTE - STOP
+  // 1. GENERARE STELE - STOP
 
   // 2. GENERARE TEXT SCRAMBLE - START
   class TextScramble {
