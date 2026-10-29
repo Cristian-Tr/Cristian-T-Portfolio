@@ -362,9 +362,24 @@ h5 {
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
-/* DAIRIES BERRIES APP */
+/* WALLY & LUNA APP */
 .thumbnail .window3 {
+	display: block;
+	margin-top: 17px;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	border: 3.5px solid black;
+	background-image: url(./wally-luna-symbol.webp);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* DAIRIES BERRIES APP */
+.thumbnail .window4 {
 	display: block;
 	margin-top: 17px;
 	margin-bottom: 35px;
