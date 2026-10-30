@@ -374,7 +374,7 @@ h5 {
 	height: 98px;
 	border-radius: 50%;
 	border: 3.5px solid black;
-	background-image: url(./wally-luna-symbol.webp);
+	background-image: url(./dairies-berries-symbol.webp);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -390,7 +390,7 @@ h5 {
 	height: 98px;
 	border-radius: 50%;
 	border: 3.5px solid black;
-	background-image: url(./dairies-berries-symbol.webp);
+	background-image: url(./wally-luna-symbol.webp);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -739,7 +739,7 @@ strong {
 	display: flex;
 	width: max-content;
 	white-space: nowrap;
-	animation: marqueeAnimation 80s linear infinite;
+	animation: marqueeAnimation 8s linear infinite;
 
 	/* Eliminăm micro-sacadările */
 	will-change: transform;
@@ -748,8 +748,8 @@ strong {
 /* Stilul textului tău */
 .ticker-text span {
 	font-size: 1.25em;
-	color: royalblue;
-	text-shadow: .1px .1px .1px black;
+	color: cyan;
+	text-shadow: .8px .8px .1px black;
 	padding-left: 100vw;
 	/* Forțează textul să înceapă din afara ecranului (dreapta) */
 }
@@ -845,6 +845,38 @@ strong {
 	animation-duration: 1.7s;
 }
 
+/* TEXT ANIMAT SVG */
+.text-animation {
+	fill: transparent;
+	stroke-width: 1;
+	stroke: black;
+	stroke-dasharray: 250 50;
+	animation: colorRotation 8s linear infinite;
+}
+
+@keyframes colorRotation {
+	0% {
+		stroke: black;
+		stroke-dashoffset: 1000;
+	}
+
+	35% {
+		stroke: cyan;
+	}
+
+	75% {
+		stroke: cyan;
+	}
+
+	75.1% {
+		stroke: black;
+	}
+
+	100% {
+		stroke: black;
+		stroke-dashoffset: 0;
+	}
+}
 /* Stil foto */
 .my-image {
 	width: 33px;
@@ -866,40 +898,8 @@ strong {
 	font-size: 1rem;
 	font-weight: 800;
 	text-shadow: .1px .1px .1px black;
-	color: royalblue;
+	color: cyan;
 	padding-top: 1px;
-}
-
-.text-animation {
-	fill: transparent;
-	stroke-width: 1;
-	stroke: black;
-	stroke-dasharray: 250 50;
-	animation: colorRotation 8s linear infinite;
-}
-
-@keyframes colorRotation {
-	0% {
-		stroke: cyan;
-		stroke-dashoffset: 1000;
-	}
-
-	35% {
-		stroke: royalblue;
-	}
-
-	70% {
-		stroke: royalblue;
-	}
-
-	70.1% {
-		stroke: cyan;
-	}
-
-	100% {
-		stroke: cyan;
-		stroke-dashoffset: 0;
-	}
 }
 
 /* Blocare inversare culori de catre browser */
